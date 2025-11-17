@@ -4,8 +4,8 @@
 
 ## 功能簡介
 
-- 角色設定（母女、學姐、助教等）
-- STYLE_GUIDELINES 參考《梨》的文風
+- 角色設定
+- STYLE_GUIDELINES 參考90年代的文風
 - 呼叫 Gemini 產生 Galgame 劇情
 
 ## 主要元件範例
