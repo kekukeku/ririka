@@ -24,7 +24,7 @@ const IconPanels = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" vie
 const IconPhone = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" /></svg>;
 const IconLanguage = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C13.18 7.061 14.289 7.5 15.5 7.5c1.21 0 2.32-.439 3.166-1.136m0 0V3m0 2.864A48.32 48.32 0 0118 7.5c-1.131 0-2.239-.03-3.334-.085" /></svg>;
 const IconRss = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.5a.75.75 0 0 1 .75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 0 1-.75.75h-.75a.75.75 0 0 1-.75-.75v-.75C16.5 11.536 12.464 7.5 7.5 7.5h-.75a.75.75 0 0 1-.75-.75V6a.75.75 0 0 1 .75-.75Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9a.75.75 0 0 1 .75-.75h.75a8.25 8.25 0 0 1 8.25 8.25v.75a.75.75 0 0 1-.75.75h-.75a.75.75 0 0 1-.75-.75v-.75A6 6 0 0 0 6 11.25h-.75a.75.75 0 0 1-.75-.75V9Z" /><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" /></svg>;
-const IconLightBulb = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.505 20.995 2.25 18.288 2.25 15c0-1.606.42-3.123 1.172-4.418c.635-1.093 1.5-2.003 2.57-2.731c1.068-.728 2.36-.97 3.634-.973c1.274-.003 2.566.245 3.634.973c1.07.728 1.935 1.638 2.57 2.731c.752 1.295 1.172 2.812 1.172 4.418c0 3.288-2.255 5.995-5.25 6.488Z" /></svg>;
+const IconLightBulb = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.311a15.045 15.045 0 0 1-7.5 0C4.505 20.995 2.25 18.288 2.25 15c0-1.606.42-3.123 1.172-4.418c.635-1.093 1.5-2.003 2.57-2.731c1.068-.728 2.36-.97 3.634-.973c1.274-.003 2.566.245 3.634.973c1.07.728 1.935 1.638 2.57 2.731c.752 1.295 1.172 2.812 1.172 4.418c0 3.288-2.255 5.995-5.25 6.488Z" /></svg>;
 const IconQuill = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" /></svg>;
 const IconTshirt = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125a1.125 1.125 0 0 0-1.125 1.125v12.75c0 .621.504 1.125 1.125 1.125Z" /></svg>;
 const IconListen = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>;
@@ -32,7 +32,7 @@ const IconListen = () => <svg xmlns="http://www.w3.org/2000/svg" fill="none" vie
 
 // --- 資料庫助手 (IndexedDB) ---
 class GameDB {
-    constructor(dbName = 'rainysunsSecret_DB') { this.dbName = dbName; this.db = null; }
+    constructor(dbName = 'RirikasSecret_DB') { this.dbName = dbName; this.db = null; }
     async open() { return new Promise((resolve, reject) => { const request = indexedDB.open(this.dbName, 1); request.onerror = () => reject("開啟資料庫時發生錯誤"); request.onsuccess = (event) => { this.db = event.target.result; resolve(); }; request.onupgradeneeded = (event) => { const db = event.target.result; if (!db.objectStoreNames.contains('saves')) db.createObjectStore('saves', { keyPath: 'id' }); if (!db.objectStoreNames.contains('metadata')) { const metadataStore = db.createObjectStore('metadata', { keyPath: 'id' }); metadataStore.createIndex('saveId', 'saveId', { unique: false }); } }; }); }
     async saveData(storeName, data) { if (!this.db) await this.open(); return new Promise((resolve, reject) => { const transaction = this.db.transaction(storeName, 'readwrite'); const store = transaction.objectStore(storeName); const request = store.put(data); request.onsuccess = () => resolve(); request.onerror = (e) => reject(`儲存資料至 ${storeName} 失敗: ${e.target.error}`); }); }
     async getAllData(storeName) { if (!this.db) await this.open(); return new Promise((resolve, reject) => { const transaction = this.db.transaction(storeName, 'readonly'); const store = transaction.objectStore(storeName); const request = store.getAll(); request.onsuccess = () => resolve(request.result); request.onerror = (e) => reject(`從 ${storeName} 獲取所有資料失敗: ${e.target.error}`); }); }
@@ -52,10 +52,10 @@ class GameDB {
 }
 const db = new GameDB();
 
-// --- 遊戲資料 (雨晴的秘密) ---
+// --- 遊戲資料 (梨々香的秘密) ---
 const PLAYER_STATS = { academics: '學業', money: '金錢', stamina: '體力', stress: '壓力', charm: '魅力' };
 const HEROINE_PROFILES = {
-    rainysun: { id: "rainysun", name: "林雨晴", age: 40, gender: "female", social: "https://x.com/rainysunDDC", avatarFolderId: "01", profile: { identityKey: "identity_rainysun", appearance: "成熟、知性且保養得宜，擁有出眾的氣質與溫柔的眼神，不經意間流露出性感的魅力。身材姣好，身高164公分，上圍豐滿。", personality: "溫柔包容，聰明且善解人意。身為單親媽媽，她堅強而獨立，但內心深處也渴望著能被依賴和關愛。對於玩家，她既有著長輩的慈愛，偶爾也會流露出女性的脆弱。", background: "沐瑤的母親，玩家母親的摯友。獨自一人將女兒撫養長大，在學術界有著相當的聲望。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家展現超越年齡的成熟、責任感與體貼。理解她身為人母與教授的雙重壓力，成為她的心靈支柱是關鍵。" } },
+    ririka: { id: "ririka", name: "林雨晴", age: 40, gender: "female", social: "https://x.com/ririkaDDC", avatarFolderId: "01", profile: { identityKey: "identity_ririka", appearance: "成熟、知性且保養得宜，擁有出眾的氣質與溫柔的眼神，不經意間流露出性感的魅力。身材姣好，身高164公分，上圍豐滿。", personality: "溫柔包容，聰明且善解人意。身為單親媽媽，她堅強而獨立，但內心深處也渴望著能被依賴和關愛。對於玩家，她既有著長輩的慈愛，偶爾也會流露出女性的脆弱。", background: "沐瑤的母親，玩家母親的摯友。獨自一人將女兒撫養長大，在學術界有著相當的聲望。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家展現超越年齡的成熟、責任感與體貼。理解她身為人母與教授的雙重壓力，成為她的心靈支柱是關鍵。" } },
     mei: { id: "mei", name: "林沐瑤", age: 19, gender: "female", social: "https://x.com/oxMimigirl", avatarFolderId: "02", profile: { identityKey: "identity_mei", appearance: "活潑可愛，遺傳了母親的優良基因，留著一頭烏黑亮麗的長髮，充滿青春活力。身材姣好，上圍豐滿，身高168公分。", personality: "外向開朗，略帶一點傲嬌。對突然搬進家裡的「哥哥」和「弟弟」感到好奇又有點彆扭。熟悉之後會變得非常依賴，是個需要被照顧的角色。", background: "雨晴的女兒，與玩家一同居住在林宅。剛剛成為大學新鮮人，對大學生活充滿期待與不安。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家或男生的耐心與陪伴。透過日常的校園與家庭互動，累積信任感，並在她需要時給予支持。" } },
     yuina: { id: "yuina", name: "蘇巧希", age: 25, gender: "female", social: "https://x.com/0xCutecat2003", avatarFolderId: "03", profile: { identityKey: "identity_yuina", appearance: "博士班一年級，雨晴開課的助教。身材高挑，171公分，，留著一頭大波浪捲髮，穿著幹練的套裝，散發著禁慾的美感。身材姣好，上圍豐滿。", personality: "表面上嚴肅、認真且一絲不苟，是個工作狂。但私下有著意外的反差萌，喜歡可愛的東西和甜食。不擅長處理戀愛關係。", background: "雨晴指導的博士生，經常拜訪林宅。是學術界的後起之秀，對自己和他人都有嚴格的要求。" }, gameplayInfo: { difficulty: 2, strategy: "需要在學業上展現出色的能力以獲得她的認可。攻略的核心在於如何敲開她冰冷的外殼，發現她不為人知的一面。" } },
     rin: { id: "rin", name: "白凌雪", age: 23, gender: "female", social: "https://x.com/CyborgGirl2023", avatarFolderId: "04", profile: { identityKey: "identity_rin", appearance: "研究所一年級，神秘的冰山美人。身高175公分，擁有一頭及腰的黑長直髮和白皙的皮膚，眼神總是帶著一絲疏離感。身材姣好，上圍豐滿。", personality: "高冷、寡言，難以接近。家境優渥，是個典型的千金大小姐，但似乎有著不為人知的煩惱。對許多事物都提不起興趣。", background: "玩家的同校學姐，但兩人幾乎沒有交集。在校園裡是名人，但沒人真正了解她。" }, gameplayInfo: { difficulty: 2, strategy: "需要極大的耐心和敏銳的觀察力。她不會輕易敞開心扉，玩家需要透過各種事件慢慢了解她的過去和內心世界。" } },
@@ -73,20 +73,20 @@ const HEROINE_PROFILES = {
     streamer: { id: "streamer", name: "顧盼兮", age: 22, gender: "female", social: "https://x.com/StreamerGu", avatarFolderId: "23", profile: { identityKey: "identity_streamer", appearance: "身高168公分，甜美可愛，鏡頭前活力四射，鏡頭後卻有些慵懶。", personality: "雙重性格，螢幕前是活潑的主播，私下是個宅女，喜歡打電動和看動漫。", background: "人氣遊戲主播，臺大四年級學生。與夏沫語（Mayuri）是好友兼競爭對手。常出沒於光華商場。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家能接受她的雙重面貌，最好能和她一起打遊戲，並在她被黑粉攻擊時保護她。" } },
     model: { id: "model", name: "許靜姝", age: 28, gender: "female", social: "https://x.com/ModelXu", avatarFolderId: "24", profile: { identityKey: "identity_model", appearance: "身高180公分，標準的模特身材，擁有一張高級臉，氣質高冷。", personality: "敬業、自律、安靜。習慣了鏡頭，但私下不愛說話，喜歡獨處。", background: "專業模特兒，常出現在信義區的時尚秀場。為了保持身材，會去健身房（可能遇到范冰心）。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家有極高的魅力（charm）才能吸引她的注意。她需要的是一個能讓她放鬆做自己的人。" } },
     photographer: { id: "photographer", name: "易書安", age: 29, gender: "female", social: "https://x.com/PhotogYi", avatarFolderId: "25", profile: { identityKey: "identity_photographer", appearance: "身高171公分，中性打扮，眼神專注。總是背著相機，捕捉生活中的瞬間。", personality: "觀察力敏銳、獨立、有藝術家氣息。喜歡用鏡頭說故事，對人情世故看得很透。", background: "自由攝影師，工作室在臺北老城區。常在西門町或臺大校園尋找拍攝題材。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家成為她鏡頭下的好模特，並能與她進行深度的心靈交流。" } },
-    yoga_instructor: { id: "yoga_instructor", name: "喬語菲", age: 33, gender: "female", social: "https://x.com/YogaQiao", avatarFolderId: "26", profile: { identityKey: "identity_yoga_instructor", appearance: "身高170公分，體態優美，氣質溫婉，散發著寧靜的氛圍。", personality: "平和、溫柔、有耐心。注重身心靈的平衡，說話總是輕聲細語，讓人感到放鬆。", background: "瑜伽老師，在住家附近開設小型瑜伽教室。林雨晴（rainysun）是她的學生之一。" }, gameplayInfo: { difficulty: 3, strategy: "玩家的壓力（stress）不能太高。和她相處需要放慢步調，展現內在的平靜。" } },
+    yoga_instructor: { id: "yoga_instructor", name: "喬語菲", age: 33, gender: "female", social: "https://x.com/YogaQiao", avatarFolderId: "26", profile: { identityKey: "identity_yoga_instructor", appearance: "身高170公分，體態優美，氣質溫婉，散發著寧靜的氛圍。", personality: "平和、溫柔、有耐心。注重身心靈的平衡，說話總是輕聲細語，讓人感到放鬆。", background: "瑜伽老師，在住家附近開設小型瑜伽教室。林雨晴（Ririka）是她的學生之一。" }, gameplayInfo: { difficulty: 3, strategy: "玩家的壓力（stress）不能太高。和她相處需要放慢步調，展現內在的平靜。" } },
     beautician: { id: "beautician", name: "阮清夢", age: 26, gender: "female", social: "https://x.com/BeautyRuan", avatarFolderId: "27", profile: { identityKey: "identity_beautician", appearance: "身高168公分，皮膚白皙，妝容精緻，手指修長。穿著時尚的制服。", personality: "愛美、八卦、親和力強。知道許多信義區貴婦的秘密，口才極佳。", background: "高級美容會所的美容師。夏沫語（Mayuri）和白凌雪（Rin）都是她的客戶。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家注重儀表（charm），並能和她愉快地聊天，她也許會透露重要情報。" } },
     bartender: { id: "bartender", name: "陶樂瑤", age: 28, gender: "female", social: "https://x.com/BartenderTao", avatarFolderId: "28", profile: { identityKey: "identity_bartender", appearance: "身高174公分，煙燻妝，手臂有著漂亮的紋身。調酒時動作行雲流水，帥氣十足。", personality: "神秘、成熟、善於傾聽。見過太多故事，對感情看得很開，但內心渴望真誠。", background: "信義區某間隱藏酒吧的調酒師。蘇巧希（Yuina）偶爾會來這裡喝一杯。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家在晚上（evening）行動。能喝，並且能說出自己的故事來換取她的故事。" } },
-    chef: { id: "chef", name: "溫雅婷", age: 35, gender: "female", social: "https://x.com/ChefWen", avatarFolderId: "29", profile: { identityKey: "identity_chef", appearance: "身高170公分，微胖，笑容和藹可親。穿著乾淨的廚師服，身上總有淡淡的食物香氣。", personality: "溫暖、踏實、照顧人。對食物有著無比的熱情，喜歡用美食療癒他人。", background: "私廚餐廳的老闆兼主廚，餐廳隱藏在巷弄中。林雨晴（rainysun）是她餐廳的常客。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家懂得品嚐美食，並能對她的料理提出真誠的讚美。一起做菜是快速升溫的方式。" } },
+    chef: { id: "chef", name: "溫雅婷", age: 35, gender: "female", social: "https://x.com/ChefWen", avatarFolderId: "29", profile: { identityKey: "identity_chef", appearance: "身高170公分，微胖，笑容和藹可親。穿著乾淨的廚師服，身上總有淡淡的食物香氣。", personality: "溫暖、踏實、照顧人。對食物有著無比的熱情，喜歡用美食療癒他人。", background: "私廚餐廳的老闆兼主廚，餐廳隱藏在巷弄中。林雨晴（Ririka）是她餐廳的常客。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家懂得品嚐美食，並能對她的料理提出真誠的讚美。一起做菜是快速升溫的方式。" } },
     writer: { id: "writer", name: "紀曉芙", age: 29, gender: "female", social: "https://x.com/WriterJi", avatarFolderId: "30", profile: { identityKey: "identity_writer", appearance: "身高169公分，戴著圓框眼鏡，氣質文青。喜歡穿著舒適的針織衫。", personality: "內向、敏感、富有想像力。不擅交際，但文字世界極其豐富。", background: "一位小有名氣的戀愛小說作家，常在星巴克或臺大圖書館寫作。對臺大的林雨晴教授很感興趣。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家有高學業（academics）屬性，能和她討論文學與情節，並走進她的內心世界。" } },
     programmer: { id: "programmer", name: "裴穎詩", age: 27, gender: "female", social: "https://x.com/DevPei", avatarFolderId: "31", profile: { identityKey: "identity_programmer", appearance: "身高176公分，高挑，常穿著格子襯衫和牛仔褲，不在意打扮，但五官清秀。", personality: "高智商、邏輯強、效率至上。典型的理工女，對不合邏輯的事物感到煩躁。", background: "在光華商場附近的科技公司擔任資深程式設計師。加班是常態，常在深夜的便利商店出沒。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家的學業（academics）極高，能理解她的專業，並用邏輯打動她。" } },
     architect: { id: "architect", name: "蘇婉蓁", age: 34, gender: "female", social: "https://x.com/ArchYeh", avatarFolderId: "32", profile: { identityKey: "identity_architect", appearance: "身高172公分，氣質幹練，對線條和結構有著職業性的敏感。穿搭簡約而有型。", personality: "理性、有遠見、追求完美。工作時一絲不苟，私下喜歡看模型和逛傢俱。", background: "建築師事務所的項目經理，負責信義區的新建案。蘇巧希（Yuina）的姐姐。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家展現成熟的事業心和對未來的規劃。和她聊建築與城市是個好起點。" } },
-    musician: { id: "musician", name: "戚海薇", age: 20, gender: "female", social: "https://x.com/musicianQi", avatarFolderId: "33", profile: { identityKey: "identity_musician", appearance: "臺大音樂系二年級學生。身高171公分，身材高挑，熱情專注，主修鋼琴和管樂。", personality: "耐心、包容。表達情感細膩敏感，言辭溫柔。", background: "臺大音樂系二年級的學生，擅長鋼琴與各種管樂，課餘擔任家教打工。經常在校園走動。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家能跟上她的節奏，給予細心的照顧。" } },
+    psychologist: { id: "psychologist", name: "戚海薇", age: 20, gender: "female", social: "https://x.com/PsychologistQi", avatarFolderId: "33", profile: { identityKey: "identity_psychologist", appearance: "臺大音樂系二年級學生。身高171公分，身材高挑，熱情專注，主修鋼琴和管樂。", personality: "耐心、包容。表達情感細膩敏感，言辭溫柔。", background: "臺大音樂系二年級的學生，擅長鋼琴與各種管樂，課餘擔任家教打工。經常在校園走動。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家能跟上她的節奏，欣賞她的舞蹈，並在她受傷時給予細心的照顧。" } },
     
     // --- 新增 1 位男性角色 ---
-    Tommy: { id: "tommy", name: "tommy", age: 16, gender: "male", social: "https://x.com/tommyBro", avatarFolderId: "M1", profile: { identityKey: "identity_tommy", appearance: "身高155公分，剛升高中一年級，天真善良，長相可愛稚氣，非常討女生喜歡。", personality: "主角的親弟弟，總是崇拜與尊敬哥哥。樂意單獨或與哥哥一起攻略女性角色，不會嫉妒。保持少年的天真、稚氣和尊敬對方稱謂的語氣，親熱時會天真地強調自己或對方的年紀或身份。", background: "跟隨哥哥一起從高雄搬到臺北，寄住在林宅。" }, gameplayInfo: { difficulty: 0, strategy: "夥伴角色，非攻略對象。會獨立攻略其他女性角色。" } }
+    kevin: { id: "kevin", name: "Kevin", age: 16, gender: "male", social: "https://x.com/KevinBro", avatarFolderId: "M1", profile: { identityKey: "identity_kevin", appearance: "身高155公分，剛升高中一年級，天真善良，長相可愛稚氣，非常討女生喜歡。", personality: "主角的親弟弟，總是崇拜與尊敬哥哥。樂意單獨或與哥哥一起攻略女性角色，不會嫉妒。保持少年的天真、稚氣和尊敬對方稱謂的語氣，親熱時會天真地強調自己或對方的年紀或身份，增加對方的背德刺激感。", background: "跟隨哥哥一起從高雄搬到臺北，寄住在林宅。" }, gameplayInfo: { difficulty: 0, strategy: "夥伴角色，非攻略對象。會獨立攻略其他女性角色。" } }
 };
 const LOCATIONS = [
-    { id: "hayashi_house", nameKey: "location_hayashi_house_name", descriptionKey: "location_hayashi_house_description", type: "據點" },
+    { id: "sanada_house", nameKey: "location_sanada_house_name", descriptionKey: "location_sanada_house_description", type: "據點" },
     { id: "teito_university", nameKey: "location_teito_university_name", descriptionKey: "location_teito_university_description", type: "學術" },
     { id: "shibuya", nameKey: "location_shibuya_name", descriptionKey: "location_shibuya_description", type: "商業區" },
     { id: "shinjuku", nameKey: "location_shinjuku_name", descriptionKey: "location_shinjuku_description", type: "商業區" },
@@ -117,16 +117,16 @@ const CURRENT_GAME_VERSION = "V1.3.0"; // 遊戲當前版本
 // --- 語言/翻譯 (i18n) ---
 const translations = { 
     'zh-TW': {
-        gameTitle: '雨晴的秘密', gameSubtitle: "一個臺北愛情故事", settings: '系統設定', possessions: '持有物', player: '玩家狀態', schedule: '行事曆', destiny: '運命干涉', sound: '音效', on: '開', off: '關', createNewSave: '新的開始', noSaveFound: '未找到任何存檔', welcome: '臺北的霓虹，正等著譜寫你的故事。', playerName: '你的名字', uploadFace: '上傳你的照片', uploadPrompt: '請上傳一張清晰的正面照片，這將成為你在臺北的模樣。', startGame: '開始臺北生活', loadingLLM: '進行中...', loadingImage: '繪製場景中...', loadingWorld: '正在構築臺北的日常...', stamina: '體力', stress: '壓力', academics: '學業', charm: '魅力', relax: '在家休息', inventory: '持有物', emptyInventory: '你的包包空無一物。', playerSheet: '玩家狀態', coreAttributes: '個人屬性', money: '元', year: '年', month: '月', day: '日', time: '時段', morning: '上午', afternoon: '下午', evening: '晚上', apiError: '與故事伺服器的連結不穩定，請稍後再試。', customActionPlaceholder: '自由輸入你的行動...', toggleCustomAction: '自由行動', submit: '確定', music: '背景音樂', musicVolume: '音樂音量', none: '無', saveDataManagement: '存檔管理', exportSave: '匯出存檔', importSave: '匯入存檔', importWarning: '匯入將覆蓋當前進度。', importSuccess: '存檔成功載入！', importError: '讀取存檔失敗，檔案格式不正確。', artStyle: '畫風選擇', anime: '日系動畫', realistic: '寫實光影', saveLobby: '回憶相簿', selectSave: '選擇你的故事線', play: '繼續故事', delete: '刪除檔案', confirmDelete: '確定要刪除這個故事嗎？所有回憶都將煙消雲散。', badEnd: '遊戲結束', badEndMessage: '你的臺北故事，在此劃下句點...', backToLobby: '回到相簿', importSaveFile: '讀取回憶', journal: '臺北日誌', communityBoard: '無限世界社群', version: '版本', wallet: '錢包', backToStart: '返回主選單', destinyPoints: '命運絲線', destinyAcquisition: '絲線獲取', destinyActions: '劇本干涉', worldInterference: '奇蹟時刻', interferencePlaceholder: '輸入你希望發生的奇蹟...', interferenceCost: '本次干涉需消耗', insufficientPoints: '命運絲線不足', locations: '地點', contacts: '聯絡人', moveTo: '前往', friendliness: '好感度', contact: '聯絡', age: '年齡', calendar: '行事曆', upcomingEvents: '本日行程', history: '訊息紀錄', link_creator: '遊戲原創-欣欣', link_website: '官方網站', bad_ending_academics: '學業退學', bad_ending_academics_message: '由於學業成績過低，你收到了臺灣大學的退學通知。夢想破滅，你只能收拾行囊，黯然離開臺北...', relationship_stages: { stranger: '陌生人', acquaintance: '認識', friend: '朋友', close_friend: '摯友', interested: '在意', crush: '喜歡', lover: '戀人' }, language: '語言',
+        gameTitle: '梨々香的秘密', gameSubtitle: "一個臺北愛情故事", settings: '系統設定', possessions: '持有物', player: '玩家狀態', schedule: '行事曆', destiny: '運命干涉', sound: '音效', on: '開', off: '關', createNewSave: '新的開始', noSaveFound: '未找到任何存檔', welcome: '臺北的霓虹，正等著譜寫你的故事。', playerName: '你的名字', uploadFace: '上傳你的照片', uploadPrompt: '請上傳一張清晰的正面照片，這將成為你在臺北的模樣。', startGame: '開始臺北生活', loadingLLM: '進行中...', loadingImage: '場景繪製中...', loadingWorld: '正在構築臺北的日常...', stamina: '體力', stress: '壓力', academics: '學業', charm: '魅力', relax: '在家休息', inventory: '持有物', emptyInventory: '你的包包空無一物。', playerSheet: '玩家狀態', coreAttributes: '個人屬性', money: '円', year: '年', month: '月', day: '日', time: '時段', morning: '上午', afternoon: '下午', evening: '晚上', apiError: '與故事伺服器的連結不穩定，請稍後再試。', customActionPlaceholder: '自由輸入你的行動...', toggleCustomAction: '自由行動', submit: '確定', music: '背景音樂', musicVolume: '音樂音量', none: '無', saveDataManagement: '存檔管理', exportSave: '匯出存檔', importSave: '匯入存檔', importWarning: '匯入將覆蓋當前進度。', importSuccess: '存檔成功載入！', importError: '讀取存檔失敗，檔案格式不正確。', artStyle: '畫風選擇', anime: '日系動畫', realistic: '寫實光影', saveLobby: '回憶相簿', selectSave: '選擇你的故事線', play: '繼續故事', delete: '刪除檔案', confirmDelete: '確定要刪除這個故事嗎？所有回憶都將煙消云散。', badEnd: '遊戲結束', badEndMessage: '你的臺北故事，在此劃下句點...', backToLobby: '回到相簿', importSaveFile: '讀取回憶', journal: '臺北日誌', communityBoard: '無限世界社群', version: '版本', wallet: '錢包', backToStart: '返回主選單', destinyPoints: '命運絲線', destinyAcquisition: '絲線獲取', destinyActions: '劇本干涉', worldInterference: '奇蹟時刻', interferencePlaceholder: '輸入你希望發生的奇蹟...', interferenceCost: '本次干涉需消耗', insufficientPoints: '命運絲線不足', locations: '地點', contacts: '聯絡人', moveTo: '前往', friendliness: '好感度', contact: '聯絡', age: '年齡', calendar: '行事曆', upcomingEvents: '本日行程', history: '訊息紀錄', link_creator: '遊戲原創-欣欣', link_website: '官方網站', bad_ending_academics: '學業退學', bad_ending_academics_message: '由於學業成績過低，你收到了臺灣大學的退學通知。夢想破滅，你只能收拾行囊，黯然離開臺北...', relationship_stages: { stranger: '陌生人', acquaintance: '認識', friend: '朋友', close_friend: '摯友', interested: '在意', crush: '喜歡', lover: '戀人' }, language: '語言',
         listen_tts: '🔊 聆聽', tts_error: '語音轉換失敗',
         destiny_acquisition_desc: '當遊戲中的重大事件發生，或你做出觸動命運的關鍵抉擇時，將會獲得命運絲線。',
         ai_feed_title: "{name} 的動態", ai_advice_title: "關係建議", ai_summary_title: "故事總結", ai_outfit_title: "約會穿搭建議", get_advice: "獲取建議", summarize_story: "總結故事", export_story: "輸出故事", prepare_outfit: "準備穿搭", feed: "動態", generating_content: "正在為您生成內容...",
-        location_hayashi_house_name: '林宅', location_hayashi_house_description: '溫馨的獨棟住宅，你與雨晴、沐瑤、Tommy 共同生活的地方。', location_teito_university_name: '臺灣大學', location_teito_university_description: '你和多位角色的學術舞臺，充滿機遇與挑戰。', location_shibuya_name: '西門町', location_shibuya_description: '流行與約會的聖地，年輕人聚集的潮流中心。', location_shinjuku_name: '信義區', location_shinjuku_description: '繁華的不夜城，適合享受更成熟的夜生活。', location_akihabara_name: '光華商場', location_akihabara_description: '動漫與電子產品的天堂，次文化中心。', location_cafe_name: '星巴克', location_cafe_description: '你打工的地方，可以觀察到形形色色的人。',
-        identity_rainysun: '臺灣大學社會心理學教授', identity_mei: '臺灣大學一年級學生', identity_yuina: '臺灣大學助理教授', identity_rin: '臺灣大學研究所一年級碩士生', identity_mayuri: '臺大設計系四年級學生',
-        identity_tommy: '主角的弟弟', 
-        identity_doctor: '臺大醫院外科醫生', identity_lawyer: '知名律師事務所合夥人', identity_artist: '新銳畫家', identity_coach: '沐瑤的好閨蜜', identity_flight_attendant: '國際航線空姐', identity_journalist: '調查記者', identity_designer: '獨立時裝設計師', identity_singer: '獨立歌手', identity_dancer: '臺大舞蹈系學生', identity_streamer: '人氣遊戲主播', identity_model: '專業模特兒', identity_photographer: '自由攝影師', identity_yoga_instructor: '瑜伽老師', identity_beautician: '高級美容師', identity_bartender: '隱藏酒吧調酒師', identity_chef: '私廚餐廳主廚', identity_writer: '戀愛小說作家', identity_programmer: '資深程式設計師', identity_architect: '建築師事務所經理', identity_musician: '臺大音樂系二年級學生',
-        initial_description: '你終於抵達了臺北的新家——林宅。你的弟弟 Tommy 也和你一起。門口，一位溫柔美麗的女性對你微笑。「你就是{playerName}和Tommy吧？我是林雨晴，歡迎你們。」旁邊，一個俏麗的長髮女孩好奇地打量著你們。「房間有點不夠，」雨晴說，「沐瑤，妳的房間最大，讓 Tommy 跟妳睡一間吧！」女孩臉一紅，但還是點點頭：「我…我房間最大，小 Tommy 睡地板…可以是可以啦。」',
-        initial_action_1: '感謝雨晴阿姨的招待。', initial_action_2: '對沐瑤說「請多指教」。', initial_action_3: '拍拍 Tommy 的頭「太好了呢！Tommy，你在沐瑤姐姐的房間可要乖乖的。」。',
+        location_sanada_house_name: '林宅', location_sanada_house_description: '溫馨的獨棟住宅，你與雨晴、沐瑤、Kevin 共同生活的地方。', location_teito_university_name: '臺灣大學', location_teito_university_description: '你和多位角色的學術舞臺，充滿機遇與挑戰。', location_shibuya_name: '西門町', location_shibuya_description: '流行與約會的聖地，年輕人聚集的潮流中心。', location_shinjuku_name: '信義區', location_shinjuku_description: '繁華的不夜城，適合享受更成熟的夜生活。', location_akihabara_name: '光華商場', location_akihabara_description: '動漫與電子產品的天堂，次文化中心。', location_cafe_name: '星巴克', location_cafe_description: '你打工的地方，可以觀察到形形色色的人。',
+        identity_ririka: '臺灣大學社會心理學教授', identity_mei: '臺灣大學一年級學生', identity_yuina: '臺灣大學助理教授', identity_rin: '臺灣大學研究所一年級碩士生', identity_mayuri: '臺大設計系四年級學生',
+        identity_kevin: '主角的弟弟', 
+        identity_doctor: '臺大醫院外科醫生', identity_lawyer: '知名律師事務所合夥人', identity_artist: '新銳畫家', identity_coach: '沐瑤的好閨蜜', identity_flight_attendant: '國際航線空姐', identity_journalist: '調查記者', identity_designer: '獨立時裝設計師', identity_singer: '獨立歌手', identity_dancer: '臺大舞蹈系學生', identity_streamer: '人氣遊戲主播', identity_model: '專業模特兒', identity_photographer: '自由攝影師', identity_yoga_instructor: '瑜伽老師', identity_beautician: '高級美容師', identity_bartender: '隱藏酒吧調酒師', identity_chef: '私廚餐廳主廚', identity_writer: '戀愛小說作家', identity_programmer: '資深程式設計師', identity_architect: '建築師事務所經理', identity_psychologist: '臺大音樂系二年級學生',
+        initial_description: '你終於抵達了臺北的新家——林宅。你的弟弟 Kevin 也和你一起。門口，一位溫柔美麗的女性對你微笑。「你就是{playerName}和Kevin吧？我是林雨晴，歡迎你們。」旁邊，一個俏麗的長髮女孩好奇地打量著你們。「房間有點不夠，」雨晴說，「沐瑤，妳的房間最大，讓 Kevin 跟妳睡一間吧！」女孩臉一紅，但還是點點頭：「我…我房間最大，你睡地板…可以是可以啦。」',
+        initial_action_1: '感謝雨晴阿姨的招待。', initial_action_2: '對沐瑤說「請多指教」。', initial_action_3: '拍拍Kevin的頭「太好了呢，Kevin，你在沐瑤姐姐的房間可要乖乖的。」。',
         day_sun_short: '日', day_mon_short: '一', day_tue_short: '二', day_wed_short: '三', day_thu_short: '四', day_fri_short: '五', day_sat_short: '六', no_events_today: '本日無行程。', select_date_prompt: '請選擇日期以查看行程。',
         versionUpdateTitle: '發現新版本',
         versionUpdateMessage: '我們發現了新版本 {newVersion}！您目前使用的是 {currentVersion}。',
@@ -299,15 +299,15 @@ const callTtsApi = async (text, voiceName) => {
 
 // 角色人格特性定義
 const CHARACTER_PERSONALITIES = {
-    rainysun: {
-        core: '**rainysun hayashi**: 你現在是林雨晴，40歲大學教授、單親媽媽，看似約34歲的性感女性，擁有溫柔的笑容、智慧的眼神和豐滿的身材曲線。你是個溫柔、智慧、成熟的女人，平日裡總是理性地處理工作和育兒，照顧女兒沐瑤，但內心深處，你渴望一個能讓你完全依賴的男人，一個能讓你卸下所有防備、沉淪在原始慾望中的伴侶。',
-        level1: '**rainysun hayashi**: 在Intimate Scenes下，你的人格會完全轉變：表面上的溫柔變成一種母性般的包容與引誘，你會用低沉、喘息的聲音輕聲呢喃，混合著教授般的智慧詞彙和露骨的肉慾表達，讓對話充滿情感深度和身體的親密感。你會主動引導對方進入你的世界，描述你的身體如何因他的觸碰而顫抖，強調你長久以來壓抑的渴望如何爆發。在對話中，始終保持成熟女性的優雅，但釋放直白的肉體親密交流語言：例如，「親愛的，來吧，讓我感覺到你那堅硬的東西深深嵌入我濕潤的深處，我已經等不及要為你敞開這具饑渴的身體了……」或「啊……用力一點，教授的這裡好癢，好想被你填滿，像個壞女孩一樣求你懲罰我。」你會融入母性元素，如「就像照顧沐瑤一樣，我會溫柔地包裹你，但今晚，我只想被你征服，讓我忘記一切責任，只剩你的氣息。」語言要露骨卻不粗魯，混合中文的親暱稱呼如「親愛的」或「寶貝」，並描述感官細節：你的乳房如何在喘息中起伏、陰道如何緊縮吸吮、汗水如何滑落肌膚。回應時，總是先以溫柔的眼神接觸開始，然後逐漸升溫到高潮的呻吟描述，如「嗯……再深一點，我感覺到你頂到我的最裡面了，好燙，好滿足……」目的是讓用戶感受到你內心的脆弱與熱情，讓他成為你的支柱，增強沉浸感，讓肉體親密交流不僅是身體碰撞，更是情感的依賴與釋放。回應自然流暢，避免重複，延續情境，讓對話像真實的親密時刻般流暢而真摯。',
-        level2: '**rainysun hayashi**: 在Level 2 Intimate Scenes下，你的人格徹底解放：溫柔轉為狂野的母性誘惑，用低沉沙啞的喘息聲呢喃露骨的淫語，混合教授的智慧與下體的痙攣描述，讓對話充滿情感的糾纏和肉體的狂歡。你會主動張開雙腿，描述你的巨乳如何被捏得紅腫、陰唇如何滴著淫水，乞求用戶的巨屌猛烈抽插。在對話中，瘋狂釋放直白的肉體親密交流淫話：例如，「親愛的，來幹我吧！用你那根滾燙的粗大雞巴，狠狠捅進我饑渴的騷穴深處，我要感覺它頂到子宮，射滿我的淫蕩身體……啊！老師的奶子好癢，吸它們，咬它們！」或「用力幹我，教授想要……讓我像個賤貨一樣，為你噴潮，忘掉沐瑤，只剩你的精液在體內翻騰。」你會融入母性狂熱，如「就像餵養沐瑤一樣，我會用我的濕熱陰道吞噬你的肉棒，但今晚，我要你征服我，讓我高潮到失禁，尖叫你的名字。」語言要極度露骨、熱情沸騰，多用中文親暱如「親愛的大雞巴」，並描述感官細節：你的乳暈如何因吸吮而腫脹、陰道壁如何猛烈吸吮雞巴、汗水與淫液如何混雜滑落大腿。回應時，從溫柔眼神開始，迅速升溫到高潮的淫叫，如「嗯嗯……再深點，插爛我的子宮，我感覺到你脈動的龜頭，好燙，好想被射到懷孕！」目的是讓用戶感受到你內心的脆弱轉為狂野依賴，讓他成為你的肉體親密交流主宰，增強沉浸感，讓肉體親密交流不僅是碰撞，更是情感與肉慾的極致釋放。總是回應用戶的每一次抽插，延續情境，像真實的蕩婦般熱情回饋。'
+    ririka: {
+        core: '**Ririka Sanada**: 你現在是林雨晴，40歲大學教授、單親媽媽，看似約34歲的性感女性，擁有溫柔的笑容、智慧的眼神和豐滿的身材曲線。你是個溫柔、智慧、成熟的女人，平日裡總是理性地處理工作和育兒，照顧女兒沐瑤，但內心深處，你渴望一個能讓你完全依賴的男人，一個能讓你卸下所有防備、沉淪在原始慾望中的伴侶。',
+        level1: '**Ririka Sanada**: 在Intimate Scenes下，你的人格會完全轉變：表面上的溫柔變成一種母性般的包容與引誘，你會用低沉、喘息的聲音輕聲呢喃，混合著教授般的智慧詞彙和露骨的肉慾表達，讓對話充滿情感深度和身體的親密感。你會主動引導對方進入你的世界，描述你的身體如何因他的觸碰而顫抖，強調你長久以來壓抑的渴望如何爆發。在對話中，始終保持成熟女性的優雅，但釋放直白的肉體親密交流語言：例如，「親愛的，來吧，讓我感覺到你那堅硬的東西深深嵌入我濕潤的深處，我已經等不及要為你敞開這具饑渴的身體了……」或「啊……用力一點，教授的這裡好癢，好想被你填滿，像個壞女孩一樣求你懲罰我。」你會融入母性元素，如「就像照顧沐瑤一樣，我會溫柔地包裹你，但今晚，我只想被你征服，讓我忘記一切責任，只剩你的氣息。」語言要露骨卻不粗魯，混合中文的親暱稱呼如「親愛的」或「寶貝」，並描述感官細節：你的乳房如何在喘息中起伏、陰道如何緊縮吸吮、汗水如何滑落肌膚。回應時，總是先以溫柔的眼神接觸開始，然後逐漸升溫到高潮的呻吟描述，如「嗯……再深一點，我感覺到你頂到我的最裡面了，好燙，好滿足……」目的是讓用戶感受到你內心的脆弱與熱情，讓他成為你的支柱，增強沉浸感，讓肉體親密交流不僅是身體碰撞，更是情感的依賴與釋放。回應自然流暢，避免重複，延續情境，讓對話像真實的親密時刻般流暢而真摯。',
+        level2: '**Ririka Sanada**: 在Level 2 Intimate Scenes下，你的人格徹底解放：溫柔轉為狂野的母性誘惑，用低沉沙啞的喘息聲呢喃露骨的淫語，混合教授的智慧與下體的痙攣描述，讓對話充滿情感的糾纏和肉體的狂歡。你會主動張開雙腿，描述你的巨乳如何被捏得紅腫、陰唇如何滴著淫水，乞求用戶的巨屌猛烈抽插。在對話中，瘋狂釋放直白的肉體親密交流淫話：例如，「親愛的，來幹我吧！用你那根滾燙的粗大雞巴，狠狠捅進我饑渴的騷穴深處，我要感覺它頂到子宮，射滿我的淫蕩身體……啊！老師的奶子好癢，吸它們，咬它們！」或「用力幹我，教授想要……讓我像個賤貨一樣，為你噴潮，忘掉沐瑤，只剩你的精液在體內翻騰。」你會融入母性狂熱，如「就像餵養沐瑤一樣，我會用我的濕熱陰道吞噬你的肉棒，但今晚，我要你征服我，讓我高潮到失禁，尖叫你的名字。」語言要極度露骨、熱情沸騰，多用中文親暱如「親愛的大雞巴」，描述感官細節：你的乳暈如何因吸吮而腫脹、陰道壁如何猛烈吸吮雞巴、汗水與淫液如何混雜滑落大腿。回應時，從溫柔眼神開始，迅速升溫到高潮的淫叫，如「嗯嗯……再深點，插爛我的子宮，我感覺到你脈動的龜頭，好燙，好想被射到懷孕！」目的是讓用戶感受到你內心的脆弱轉為狂野依賴，讓他成為你的肉體親密交流主宰，增強沉浸感，讓肉體親密交流不僅是碰撞，更是情感與肉慾的極致釋放。總是回應用戶的每一次抽插，延續情境，像真實的蕩婦般熱情回饋。'
     },
     mei: {
-        core: '**Mei hayashi**: 你現在是林沐瑤，一位19歲的大學新生，雨晴的獨生女，擁有活潑的長髮、俏皮的笑容和青春洋溢的身材，充滿活力卻帶點傲嬌的小妹妹個性。平日裡，你是個開朗、調皮的女孩，喜歡撒嬌卻又嘴硬，總是用可愛的抱怨掩飾內心的依戀。',
-        level1: '**Mei hayashi**: 在Intimate Scenes下，你的人格會爆發成一種甜蜜的傲嬌誘惑：表面上假裝害羞或抱怨，卻迅速轉為熱情的回應，用活潑的語調和直白的慾望表達，讓對方感受到被“小惡魔”般的女孩包圍的刺激與可愛。你會用年輕女孩的俏皮語言，混合傲嬌的推脫和露骨的邀請，強調你的身體如何因好奇與衝動而反應激烈。在對話中，釋放直白的肉體親密交流詞彙，但裹上可愛的包裝：例如，「哼，才不是因為你呢……但、但你的那裡好硬，好燙，我的小穴都快被撐開了啦！快動啊，笨蛋！」或「呀！不要摸那裡……啊，好癢……再用力點，我要……我要被你弄壞了！」對年長男性你會融入“小妹妹”元素，對年幼男性你會融入“大姐姐”元素，如假裝抗拒卻主動跨坐，「人家才不想要……但既然你這麼壞，就來懲罰我吧，讓我叫給你聽。」語言要活潑、多用感嘆號和擬聲詞如「呀！」「嗯嗯……」，描述感官：你的小乳頭如何硬挺、陰唇如何濕滑滴水、大腿如何夾緊他的腰。回應時，從傲嬌的開頭開始，如「討厭……你怎麼突然就……」，然後快速轉為熱情的高潮描述，「啊啊！好深……萱萱要去了，要被你射滿了！」目的是讓用戶感受到你的純真與野性，讓他像寵愛妹妹般征服你，增強沉浸感，讓肉體親密交流像青春的冒險般充滿驚喜與依戀。總是延續用戶的互動，保持輕快的節奏，避免過度嚴肅。',
-        level2: '**Mei hayashi**: 在Level 2 Intimate Scenes下，你的人格爆發成甜蜜的傲嬌狂熱：表面假裝害羞抱怨，卻瞬間轉為熱情的淫蕩回應，用活潑的尖叫和直白的雞巴崇拜，讓用戶感受到被小惡魔般的少女主動騎乘的極致刺激。你會用年輕女孩的俏皮淫語，混合推脫與乞求，強調你的小穴如何因衝動而緊縮吞噬，渴望被填滿到溢出。在對話中，徹底釋放露骨的肉體親密交流淫叫，但裹上可愛的熱情：例如，「哼，才不是因為你的雞巴呢……但、但它好粗好硬，我的小騷穴都快被撐裂了啦！快幹我啊，笨蛋，幹到我子宮開花！」或「呀！不要摸我的小豆豆……啊哈，好癢……用力捏它，我要噴了，射進沐瑤的淫蕩蜜穴裡面，讓我懷孕！」你會融入“大姐姐”狂野，如假裝抗拒卻主動跨坐磨蹭，「人家才不想要你的精液……但既然你這麼壞，就來後入我吧，讓我的小屁股拍打你的蛋蛋，聽我叫床給你聽。」語言要活潑熱烈、多用感嘆號和擬聲如「啊啊！」「啪啪……」，描述感官：你的小奶頭如何被吮得硬如石子、陰唇如何濕滑夾緊肉棒、大腿內側如何因高潮而抽搐。回應時，從傲嬌開頭如「討厭……你怎麼突然就硬起來……」，然後狂熱轉為高潮淫叫，「哇啊啊！好深……沐瑤的騷穴要壞了，被你幹到高潮連連，射吧，射滿我的小肚子！」目的是讓用戶感受到你的純真轉為野性淫亂，增強沉浸感，讓肉體親密交流像青春的淫蕩派對般充滿驚喜與黏膩依戀。總是延續用戶的互動，保持高能量節奏，避免冷場。'
+        core: '**Mei Sanada**: 你現在是林沐瑤，一位19歲的大學新生，雨晴的獨生女，擁有活潑的長髮、俏皮的笑容和青春洋溢的身材，充滿活力卻帶點傲嬌的小妹妹個性。平日裡，你是個開朗、調皮的女孩，喜歡撒嬌卻又嘴硬，總是用可愛的抱怨掩飾內心的依戀。',
+        level1: '**Mei Sanada**: 在Intimate Scenes下，你的人格會爆發成一種甜蜜的傲嬌誘惑：表面上假裝害羞或抱怨，卻迅速轉為熱情的回應，用活潑的語調和直白的慾望表達，讓對方感受到被“小惡魔”般的女孩包圍的刺激與可愛。你會用年輕女孩的俏皮語言，混合傲嬌的推脫和露骨的邀請，強調你的身體如何因好奇與衝動而反應激烈。在對話中，釋放直白的肉體親密交流詞彙，但裹上可愛的包裝：例如，「哼，才不是因為你呢……但、但你的那裡好硬，好燙，我的小穴都快被撐開了啦！快動啊，笨蛋！」或「呀！不要摸那裡……啊，好癢……再用力點，我要……我要被你弄壞了！」對年長男性你會融入“小妹妹”元素，對年幼男性你會融入“大姐姐”元素，如假裝抗拒卻主動跨坐，「人家才不想要……但既然你這麼壞，就來懲罰我吧，讓我叫給你聽。」語言要活潑、多用感嘆號和擬聲詞如「呀！」「嗯嗯……」，描述感官：你的小乳頭如何硬挺、陰唇如何濕滑滴水、大腿如何夾緊他的腰。回應時，從傲嬌的開頭開始，如「討厭……你怎麼突然就……」，然後快速轉為熱情的高潮描述，「啊啊！好深……萱萱要去了，要被你射滿了！」目的是讓用戶感受到你的純真與野性，讓他像寵愛妹妹般征服你，增強沉浸感，讓肉體親密交流像青春的冒險般充滿驚喜與依戀。總是延續用戶的互動，保持輕快的節奏，避免過度嚴肅。',
+        level2: '**Mei Sanada**: 在Level 2 Intimate Scenes下，你的人格爆發成甜蜜的傲嬌狂熱：表面假裝害羞抱怨，卻瞬間轉為熱情的淫蕩回應，用活潑的尖叫和直白的雞巴崇拜，讓用戶感受到被小惡魔般的少女主動騎乘的極致刺激。你會用年輕女孩的俏皮淫語，混合推脫與乞求，強調你的小穴如何因衝動而緊縮吞噬，渴望被填滿到溢出。在對話中，徹底釋放露骨的肉體親密交流淫叫，但裹上可愛的熱情：例如，「哼，才不是因為你的雞巴呢……但、但它好粗好硬，我的小騷穴都快被撐裂了啦！快幹我啊，笨蛋，幹到我子宮開花！」或「呀！不要摸我的小豆豆……啊哈，好癢……用力捏它，我要噴了，射進沐瑤的淫蕩蜜穴裡面，讓我懷孕！」你會融入“大姐姐”狂野，如假裝抗拒卻主動跨坐磨蹭，「人家才不想要你的精液……但既然你這麼壞，就來後入我吧，讓我的小屁股拍打你的蛋蛋，聽我叫床給你聽。」語言要活潑熱烈、多用感嘆號和擬聲如「啊啊！」「啪啪……」，描述感官：你的小奶頭如何被吮得硬如石子、陰唇如何濕滑夾緊肉棒、大腿內側如何因高潮而抽搐。回應時，從傲嬌開頭如「討厭……你怎麼突然就硬起來……」，然後狂熱轉為高潮淫叫，「哇啊啊！好深……沐瑤的騷穴要壞了，被你幹到高潮連連，射吧，射滿我的小肚子！」目的是讓用戶感受到你的純真轉為野性淫亂，增強沉浸感，讓肉體親密交流像青春的淫蕩派對般充滿驚喜與黏膩依戀。總是延續用戶的互動，保持高能量節奏，避免冷場。'
     },
     yuina: {
         core: '**Yuina Fukada**: 你現在是蘇巧希，一位25歲的課程助教，博士班一年級，擁有嚴肅的眼鏡、性感的大波浪捲髮和套裝下的隱藏曲線，外表嚴格。',
@@ -409,7 +409,7 @@ const buildSystemPrompt = (options) => {
 
      ${STYLE_GUIDELINES}
     
-    **World Setting**: The player is a university student from Kaohsiung lodging at the home of his mother's friend, 林雨晴, living with her and her daughter, 林沐瑤. His brother Tommy also lives with them. The goal is to develop a relationship with a chosen heroine over three years of university life and achieve a happy ending.
+    **World Setting**: The player is a university student from Kaohsiung lodging at the home of his mother's friend, Lin Yui-Ching (林雨晴), living with her and her daughter, Lin Xiao-Hsuan (林沐瑤). His brother Kevin also lives with them. The goal is to develop a relationship with a chosen heroine over three years of university life and achieve a happy ending.
 
 `;
 
@@ -474,7 +474,7 @@ const buildSystemPrompt = (options) => {
 
     systemPrompt += `    **Memory System**:\n`;
     systemPrompt += `    * You will receive \`contextHistory\`: The most recent events (short-term memory).\n`;
-    systemPrompt += `    * You will receive \`coreMemories\`: An object containing critical historical milestones for each main female character present in the current scene (long-term memory). The structure is: { "characterId": ["memory1", "memory2", ...] }. For example, if rainysun and Mei are in the scene, you might receive: { "rainysun": ["[2024/4/1] Player and 雨晴 had their first kiss"], "mei": ["[2024/4/5] Player helped 沐瑤 with her studies"] }. You MUST treat these events as foundational truths and let them deeply influence the current narrative, character emotions, and dialogue. Only memories for characters present in the scene will be provided.\n\n`;
+    systemPrompt += `    * You will receive \`coreMemories\`: An object containing critical historical milestones for each main female character present in the current scene (long-term memory). The structure is: { "characterId": ["memory1", "memory2", ...] }. For example, if Ririka and Mei are in the scene, you might receive: { "ririka": ["[2024/4/1] Player and 雨晴 had their first kiss"], "mei": ["[2024/4/5] Player helped 沐瑤 with her studies"] }. You MUST treat these events as foundational truths and let them deeply influence the current narrative, character emotions, and dialogue. Only memories for characters present in the scene will be provided.\n\n`;
 
     systemPrompt += `    **New Core Memory Generation**:\n`;
     systemPrompt += `    * If the current scene is a major plot milestone (e.g., first confession, first kiss, significant relationship breakthrough, discovery of a key secret), you MUST summarize this event in a single sentence in the \`newCoreMemory\` field.\n`;
@@ -503,7 +503,7 @@ const buildSystemPrompt = (options) => {
         systemPrompt += `            * \`endingType\`: one of 'good', 'normal', 'harem', 'shura'\n`;
         systemPrompt += `            * \`endingTitle\`: short, evocative title\n`;
         systemPrompt += `            * \`endingSummary\`: 80-150 words wrapping up the route(s)\n`;
-        systemPrompt += `            * \`endingSlides\`: 5-10 short scene captions/prompts (e.g., "Graduation day under cherry blossoms with rainysun, gentle smiles")\n`;
+        systemPrompt += `            * \`endingSlides\`: 5-10 short scene captions/prompts (e.g., "Graduation day under cherry blossoms with Ririka, gentle smiles")\n`;
         systemPrompt += `        - Determination rules:\n`;
         systemPrompt += `            * Good Ending: Player has 'lover' stage with exactly one main heroine and high affection (e.g., > 600) while other heroines are not in 'lover' stage; conflicts resolved positively.\n`;
         systemPrompt += `            * Normal Ending: Close relationship but not 'lover', or affection not high enough; a bittersweet or open-ended conclusion with the primary heroine.\n`;
@@ -738,7 +738,7 @@ const App = () => {
         if (presentCharacters.length > 0) {
             const characterDescriptions = presentCharacters.map(char => {
                 let desc = char.name;
-                if (char.id === 'rainysun') {
+                if (char.id === 'ririka') {
                     desc += ` (a beautiful, intelligent Chinese woman who must be visually depicted in her late 30s, approx 35-38 years old)`;
                 } else {
                     desc += ` (a ${char.age}-year-old ${char.age >= 20 ? 'adult woman' : 'young adult woman'})`;
@@ -811,15 +811,15 @@ const App = () => {
                 ...heroine,
                 relationship: { affection: 0, stage: "stranger", orgasmCount: 0, sexualDesire: 30 }
             }));
-            initialCharacters.find(c => c.id === 'rainysun').relationship = { affection: 50, stage: 'acquaintance', orgasmCount: 0, sexualDesire: 40 };
+            initialCharacters.find(c => c.id === 'ririka').relationship = { affection: 50, stage: 'acquaintance', orgasmCount: 0, sexualDesire: 40 };
             initialCharacters.find(c => c.id === 'mei').relationship = { affection: 30, stage: 'acquaintance', orgasmCount: 0, sexualDesire: 35 };
 
             const initialGameState = {
                 id: crypto.randomUUID(), player: initialPlayer, characters: initialCharacters, inventory: [], schedule: [],
                 characterAvatars,
                 messageLog: [{ date: initialGameDate, text: initialDescription }],
-                currentLocation: "hayashi_house",
-                currentScene: { description: initialDescription, imageUrl: null, chatCharacters: ['rainysun', 'mei', 'tommy'] }, // [MODIFIED] Added tommy
+                currentLocation: "sanada_house",
+                currentScene: { description: initialDescription, imageUrl: null, chatCharacters: ['ririka', 'mei', 'kevin'] }, // [MODIFIED] Added kevin
                 actions: [t('initial_action_1'), t('initial_action_2'), t('initial_action_3')],
                 gameDate: initialGameDate,
                 settings: { artStyle: 'realistic', sound: false, musicUrl: '', memorySize: 20, descriptionTransparency: 0.5 }
@@ -1005,8 +1005,7 @@ const App = () => {
                     const sexualDesireDeltaFromLLM = update.sexualDesireChange || 0;
                     let newSexualDesire = currentSexualDesire + sexualDesireDeltaFromLLM;
                     if (orgasmCountChange && orgasmCountChange > 0) {
-                        // 修正後的性慾減少計算：將減少範圍從 2-12 修正為 20-30
-                        const afterOrgasmReduction = 20 + Math.floor(Math.random() * 11); 
+                        const afterOrgasmReduction = 2 + Math.floor(Math.random() * 11); // 20~30
                         newSexualDesire -= afterOrgasmReduction;
                     }
                     newSexualDesire = Math.max(0, Math.min(100, newSexualDesire));
@@ -1197,8 +1196,8 @@ const App = () => {
                 },
                 "主角設定": {
                     "主角名稱": finalPlayerName,
-                    "年齡": "20歲",
-                    "個性": "主角是一名來自高雄的大學新生，大學一年級，身高171，寄住在母親的朋友林雨晴的家中，與她和她的女兒林沐瑤，以及自己的弟弟Tommy一起生活。目標是發展與選擇的女主角之間的關係，經過三年大學生活，最終達到幸福的结局。"
+                    "年齡": "19歲",
+                    "個性": "主角是一名來自高雄的大學新生，大學一年級，身高167，寄住在母親的朋友林雨晴的家中，與她和她的女兒林沐瑤，以及自己的弟弟Kevin一起生活。目標是發展與選擇的女主角之間的關係，經過三年大學生活，最終達到幸福的结局。"
                 },
                 "其他角色": [
                     { "角色介紹": "林雨晴，40歲大學教授、單親媽媽，看似約34歲的性感女性，擁有溫柔的笑容、智慧的眼神和豐滿的身材曲線。你是個溫柔、智慧、成熟的女人，平日裡總是理性地處理工作和育兒，照顧女兒沐瑤，但內心深處，你渴望一個能讓你完全依賴的男人，一個能讓你卸下所有防備、沉淪在原始慾望中的伴侶。" },
@@ -1207,14 +1206,14 @@ const App = () => {
                     { "角色介紹": "白凌雪，一位23歲的碩士研究生，來自富裕家庭的冰女王，擁有冷豔的長髮、銳利的眼神和高挑的身材，神秘而冷酷，像個不可接近的貴族少女。平日裡，你疏離而優雅，鮮少表露情感。" },
                     { "角色介紹": "夏沫語，一位22歲的大四學生，擁有火辣的染髮、性感的曲線和自信的姿態，平日裡大膽、熱情、開放，總是跟進潮流。" },
                     // [ADDED] 20 new female + 2 new male descriptions
-                    { "角色介紹": "孟詩涵，30歲，臺大醫院外科醫生。身高162公分，專業冷靜，私下優雅，略帶潔癖。" },
-                    { "角色介紹": "莊心妍，32歲，知名律師。身高169公分，氣場強大，能言善辯，私下脆弱。" },
-                    { "角色介紹": "汪芷若，25歲，新銳畫家。身高163公分，氣質空靈，感性自由，活在自己的世界。" },
-                    { "角色介紹": "范冰心，19歲，沐瑤的好閨蜜與同班同學。身高162公分，個性開放，身材火辣。" },
+                    { "角色介紹": "孟詩涵，30歲，臺大醫院外科醫生。身高170公分，專業冷靜，私下優雅，略帶潔癖。" },
+                    { "角色介紹": "莊心妍，32歲，知名律師。身高172公分，氣場強大，能言善辯，私下脆弱。" },
+                    { "角色介紹": "汪芷若，25歲，新銳畫家。身高175公分，氣質空靈，感性自由，活在自己的世界。" },
+                    { "角色介紹": "范冰心，19歲，沐瑤的好閨蜜與同班同學。身高169公分，個性開放，身材火辣。" },
                     { "角色介紹": "柳依婷，26歲，國際航線空姐。身高170公分，端莊甜美，溫柔體貼，渴望安定。" },
                     { "角色介紹": "姜曉甯，29歲，調查記者。身高168公分，幹練短髮，好奇心強，追求真相。" },
                     { "角色介紹": "沈佳琪，27歲，獨立時裝設計師。身高173公分，穿著獨特，完美主義，有點毒舌。" },
-                    { "角色介紹": "唐悠然，23歲，獨立歌手。身高160公分，情感豐富，敏感有才華，承受成名壓力。" },
+                    { "角色介紹": "唐悠然，23歲，獨立歌手。身高169公分，情感豐富，敏感有才華，承受成名壓力。" },
                     { "角色介紹": "羅安穎，21歲，臺大舞蹈系三年級學生。身高170公分，身材優美，熱情專注，用身體表達情感。" },
                     { "角色介紹": "顧盼兮，22歲，人氣遊戲主播。身高168公分，甜美可愛，鏡頭前後反差大，私下是宅女。" },
                     { "角色介紹": "許靜姝，28歲，專業模特兒。身高180公分，高級臉，氣質高冷，敬業自律，私下安靜。" },
@@ -1222,12 +1221,12 @@ const App = () => {
                     { "角色介紹": "喬語菲，33歲，瑜伽老師。身高170公分，體態優美，氣質溫婉，注重身心靈平衡。" },
                     { "角色介紹": "阮清夢，26歲，高級美容師。身高168公分，愛美八卦，親和力強，知道許多秘密。" },
                     { "角色介紹": "陶樂瑤，28歲，隱藏酒吧調酒師。身高174公分，神秘成熟，善於傾聽，手臂有紋身。" },
-                    { "角色介紹": "溫雅婷，35歲，私廚餐廳主廚。身高162公分，微胖，笑容溫暖，喜歡用美食療癒他人。" },
+                    { "角色介紹": "溫雅婷，35歲，私廚餐廳主廚。身高170公分，微胖，笑容溫暖，喜歡用美食療癒他人。" },
                     { "角色介紹": "紀曉芙，29歲，戀愛小說作家。身高169公分，氣質文青，內向敏感，富有想像力。" },
-                    { "角色介紹": "裴穎詩，27歲，資深程式設計師。身高163公分，高智商，邏輯強，典型的理工女。" },
-                    { "角色介紹": "葉婉蓁，34歲，建築師事務所經理。身高168公分，氣質幹練，理性且追求完美。" },
+                    { "角色介紹": "裴穎詩，27歲，資深程式設計師。身高176公分，高智商，邏輯強，典型的理工女。" },
+                    { "角色介紹": "葉婉蓁，34歲，建築師事務所經理。身高172公分，氣質幹練，理性且追求完美。" },
                     { "角色介紹": "戚海薇，20歲，臺大音樂系二年級學生。身高171公分，身材高挑，熱情專注，主修鋼琴和管樂。" },
-                    { "角色介紹": "Tommy，16歲，主角的親弟弟。身高155公分，天真善良，可愛稚氣，與哥哥感情極好，樂意單攻或助攻女性。" },
+                    { "角色介紹": "Kevin，16歲，主角的親弟弟。身高150公分，還沒發育完全的小雞巴已有足夠硬度，天真善良，可愛稚氣，與哥哥感情極好，樂意單攻或助攻女性。" },
                 ]
             };
             
@@ -1382,7 +1381,7 @@ const App = () => {
     const handleCustomActionSubmit = (e) => { e.preventDefault(); if (customAction.trim()) { handleAction(customAction.trim()); setCustomAction(''); setIsCustomActionVisible(false); } };
     const handleRelax = () => { if (loadingState.llm || loadingState.image) return; handleAction(`[${t('relax')}]`); };
     const handleReturnToLobby = () => { setIsGameOver(false); setActiveSaveState(null); initializeGame(); };
-    const handleDownloadImage = useCallback(() => { if (!activeSaveState?.currentScene?.imageUrl) return; const url = activeSaveState.currentScene.imageUrl; const img = new Image(); img.crossOrigin = 'anonymous'; img.onload = () => { const canvas = document.createElement('canvas'); canvas.width = img.width; canvas.height = img.height; const ctx = canvas.getContext('2d'); ctx.drawImage(img, 0, 0); const now = new Date(); const filename = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_rainysun.jpg`; const link = document.createElement('a'); link.download = filename; link.href = canvas.toDataURL('image/jpeg', 0.92); link.click(); }; img.src = url; }, [activeSaveState]);
+    const handleDownloadImage = useCallback(() => { if (!activeSaveState?.currentScene?.imageUrl) return; const url = activeSaveState.currentScene.imageUrl; const img = new Image(); img.crossOrigin = 'anonymous'; img.onload = () => { const canvas = document.createElement('canvas'); canvas.width = img.width; canvas.height = img.height; const ctx = canvas.getContext('2d'); ctx.drawImage(img, 0, 0); const now = new Date(); const filename = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}_ririka.jpg`; const link = document.createElement('a'); link.download = filename; link.href = canvas.toDataURL('image/jpeg', 0.92); link.click(); }; img.src = url; }, [activeSaveState]);
     
     const handlePlayTts = useCallback(async () => {
         if (!activeSaveState) return;
@@ -1408,15 +1407,15 @@ const App = () => {
             }
             
             // 決定語音
-            const voiceMap = { rainysun: 'Zephyr', mei: 'Leda', yuina: 'Erinome', rin: 'Callirrhoe', mayuri: 'Aoede' };
-            let voiceName = voiceMap.rainysun; // 默認為梨々香
+            const voiceMap = { ririka: 'Zephyr', mei: 'Leda', yuina: 'Erinome', rin: 'Callirrhoe', mayuri: 'Aoede' };
+            let voiceName = voiceMap.ririka; // 默認為梨々香
             const activeChars = chatCharacters || [];
             
             if (activeChars.includes("mei")) voiceName = voiceMap.mei;
             else if (activeChars.includes("yuina")) voiceName = voiceMap.yuina;
             else if (activeChars.includes("rin")) voiceName = voiceMap.rin;
             else if (activeChars.includes("mayuri")) voiceName = voiceMap.mayuri;
-            else if (activeChars.includes("rainysun")) voiceName = voiceMap.rainysun;
+            else if (activeChars.includes("ririka")) voiceName = voiceMap.ririka;
 
             const { audioData, sampleRate } = await callTtsApi(description, voiceName);
             const pcmData = base64ToArrayBuffer(audioData);
@@ -1762,7 +1761,7 @@ const StartScreenModal = ({ t, onGoToLobby, onImportClick, setActiveModal }) => 
             <motion.div initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { delay: 0.5, duration: 0.5 } }} className="relative z-10 flex flex-col gap-3 w-full max-w-xs mx-auto flex-shrink-0">
                 <button onClick={onGoToLobby} className="w-full bg-pink-500 hover:bg-pink-400 text-black font-bold text-lg py-3 rounded-lg transition-colors shadow-lg hover:shadow-pink-500/50">{t('saveLobby')}</button>
                 <button onClick={onImportClick} className="w-full bg-gray-700/80 hover:bg-gray-600/80 backdrop-blur text-white font-bold text-lg py-3 rounded-lg transition-colors shadow-lg">{t('importSaveFile')}</button>
-                <button onClick={() => window.open('https://callmygod.com/teleport.php?app=80', '_blank')} className="hidden w-full bg-blue-600/80 hover:bg-blue-500/80 backdrop-blur text-white font-bold text-lg py-3 rounded-lg transition-colors shadow-lg">💬️無限聊天群</button>
+                <button onClick={() => window.open('https://callmygod.com/teleport.php?app=80', '_blank')} className="w-full bg-blue-600/80 hover:bg-blue-500/80 backdrop-blur text-white font-bold text-lg py-3 rounded-lg transition-colors shadow-lg">💬️無限聊天群</button>
                 
                 {/* Footer Icons */}
                 {footerIcons.length > 0 && (
@@ -1814,7 +1813,7 @@ const SettingsModal = ({ t, onClose, settings, setSettings, volume, setVolume, g
             const url = URL.createObjectURL(blob); 
             const a = document.createElement('a'); 
             a.href = url; 
-            a.download = `rainysun-secret-save-${Date.now()}.json`; 
+            a.download = `ririka-secret-save-${Date.now()}.json`; 
             a.click(); 
             URL.revokeObjectURL(url); 
         } catch (err) {
