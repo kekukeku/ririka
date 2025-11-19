@@ -726,12 +726,9 @@ const App = () => {
         let imagePrompt = `Scene details: ${sceneDescription}. `;
 
         // Add player info
-        if (player.faceImage) {
-            imagesToInclude.push(player.faceImage);
-            promptParts.push(`The protagonist is a male university student whose face is provided in the first input image.`);
-        } else {
-            promptParts.push(`The protagonist is a ${player.age}-year-old male university student.`);
-        }
+       // Add player info (no face image)
+promptParts.push(`The protagonist is a ${player.age}-year-old male university student.`);
+
 
         // Add character info
         const presentCharacters = characters.filter(char => chatCharacters.includes(char.id));
@@ -743,10 +740,7 @@ const App = () => {
                 } else {
                     desc += ` (a ${char.age}-year-old ${char.age >= 20 ? 'adult woman' : 'young adult woman'})`;
                 }
-                if (characterAvatars && characterAvatars[char.id]) {
-                    imagesToInclude.push(characterAvatars[char.id]);
-                    desc += `, whose face is provided as an input image`;
-                }
+               
                 return desc;
             }).join(', ');
             promptParts.push(`The scene also features: ${characterDescriptions}.`);
@@ -1677,7 +1671,7 @@ const Modal = ({ children, onClose, title }) => (<motion.div initial={{ opacity:
 const CharacterCreationModal = ({ t, onSubmit, onBack, hasSaves }) => {
     const [playerData, setPlayerData] = useState({ name: '', faceImage: null });
     const fileInputRef = useRef(null);
-    const handleImageUpload = async (e) => { const file = e.target.files[0]; if (file) { const processedImage = await processAndResizeImage(file); setPlayerData(c => ({ ...c, faceImage: processedImage })); } };
+    const handleImageUpload = async (e) => { const file = e.target.files[0]; if (file) { const processedImage = await processAndResizeImage(file);  } };
     const handleSubmit = (e) => { e.preventDefault(); if (playerData.name && playerData.faceImage) onSubmit(playerData); else alert(t('uploadPrompt')); };
     return (<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 font-sans">
         <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="bg-slate-900 rounded-2xl shadow-xl w-full max-w-xl border-2 border-pink-500/60 max-h-[95vh] flex flex-col">
@@ -1686,10 +1680,9 @@ const CharacterCreationModal = ({ t, onSubmit, onBack, hasSaves }) => {
                 <h2 className="text-2xl font-bold mb-2 text-pink-300 font-title">{t('welcome')}</h2>
             </header>
             <form onSubmit={handleSubmit} className="p-6 flex-grow overflow-y-auto">
-                <div className="space-y-6">
-                    <div><label className="block text-gray-400 mb-2">{t('playerName')}</label><input type="text" value={playerData.name} onChange={e => setPlayerData(c => ({ ...c, name: e.target.value }))} className="w-full bg-slate-800 rounded p-2 text-white border border-gray-600" required /></div>
-                    <div><label className="block text-gray-400 mb-2">{t('uploadFace')}</label><div onClick={() => fileInputRef.current.click()} className="cursor-pointer w-full aspect-square bg-slate-800 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-600 hover:border-pink-400 transition-colors">{playerData.faceImage ? <img src={`data:image/jpeg;base64,${playerData.faceImage}`} alt="Preview" className="w-full h-full object-cover rounded-lg" /> : <div className="text-center text-gray-500 flex flex-col items-center justify-center h-full w-full"><IconUpload /><p className="mt-2 text-sm">{t('uploadPrompt')}</p></div>}</div><input type="file" ref={fileInputRef} onChange={handleImageUpload} accept="image/*" className="hidden" /></div>
-                </div>
+               <div>
+               <label className="block text-gray-400 mb-2">{t('playerName')}</label>
+               </div>
                 <button type="submit" className="w-full bg-pink-500 hover:bg-pink-400 text-black font-bold py-3 rounded-lg mt-8 transition-colors flex-shrink-0">{t('startGame')}</button>
             </form>
         </motion.div>
@@ -1698,11 +1691,7 @@ const CharacterCreationModal = ({ t, onSubmit, onBack, hasSaves }) => {
 const CharacterModal = ({ t, onClose, player }) => {
     return (<Modal onClose={onClose} title={t('playerSheet')}><div className="space-y-4">
         <div className="text-center">
-            {player.faceImage && (
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-pink-400 mb-4 shadow-lg">
-                    <img src={`data:image/jpeg;base64,${player.faceImage}`} alt={player.name} className="w-full h-full object-cover" />
-                </div>
-            )}
+           
             <h3 className="text-3xl font-bold font-title">{player.name}</h3>
             <p className="text-pink-300">{`${t('age')} ${player.age}`}</p>
         </div>
