@@ -1,0 +1,22 @@
+diff --git a/ririka v10 general.md b/ririka v10 general.md
+--- a/ririka v10 general.md
++++ b/ririka v10 general.md
+@@
+-            // Add player info
+-            if (player.faceImage) {
+-                imagesToInclude.push(player.faceImage);
+-                promptParts.push(`The protagonist is a male university student whose face is provided in the first input image.`);
+-            } else {
+-                promptParts.push(`The protagonist is a ${player.age}-year-old male university student.`);
+-            }
++            // Add player info (slimmed)
++            // We no longer accept an uploaded head‑shot to reduce token count.
++            // Always describe the protagonist textually instead of including a face image.
++            promptParts.push(`The protagonist is a ${player.age}-year‑old male university student.`);
+@@
+-            if (characterAvatars && characterAvatars[char.id]) {
+-                imagesToInclude.push(characterAvatars[char.id]);
+-                desc += `, whose face is provided as an input image`;
+-            }
++            // Remove character avatar images to reduce token cost.
++            // We rely on textual descriptions only.
