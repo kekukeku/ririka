@@ -183,7 +183,7 @@ const processAndResizeImage = (file) => new Promise((resolve, reject) => {
 });
 const fetchAndEncodeImage = async (url) => { try { const response = await fetch(url); if (!response.ok) throw new Error(`無法獲取圖片: ${response.statusText}`); const blob = await response.blob(); return new Promise((resolve, reject) => { const reader = new FileReader(); reader.onloadend = () => resolve(reader.result.split(',')[1]); reader.onerror = reject; reader.readAsDataURL(blob); }); } catch (error) { console.error(`讀取圖片失敗 ${url}:`, error); return null; }};
 const fetchWithRetry = async (url, options, retries = 3, backoff = 1000) => { for (let i = 0; i < retries; i++) { try { const response = await fetch(url, options); if (!response.ok) { const errorData = await response.json().catch(() => ({})); throw new Error(`API 請求失敗，狀態 ${response.status}: ${errorData.error?.message || '未知錯誤'}`); } return response.json(); } catch (error) { console.error(`第 ${i + 1} 次嘗試失敗:`, error); if (i === retries - 1) throw error; await new Promise(res => setTimeout(res, backoff * (i + 1))); } } };
-const callGeminiApi = async (prompt, systemPrompt, schema) => { const apiKey = ""; const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`; const payload = { contents: [{ parts: [{ text: JSON.stringify(prompt, null, 2) }] }], systemInstruction: { parts: [{ text: systemPrompt }] }, generationConfig: { responseMimeType: "application/json", responseSchema: schema }, }; const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); const text = result.candidates?.[0]?.content?.parts?.[0]?.text; if (!text) throw new Error("從 Gemini API 返回的格式無效。"); return JSON.parse(text); }
+const callGeminiApi = async (prompt, systemPrompt, schema) => { const apiKey = ""; const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.0-pro:generateContent?key=${apiKey}`; const payload = { contents: [{ parts: [{ text: JSON.stringify(prompt, null, 2) }] }], systemInstruction: { parts: [{ text: systemPrompt }] }, generationConfig: { responseMimeType: "application/json", responseSchema: schema }, }; const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); const text = result.candidates?.[0]?.content?.parts?.[0]?.text; if (!text) throw new Error("從 Gemini API 返回的格式無效。"); return JSON.parse(text); }
 const callFlashImageApi = async (prompt, images = []) => {
     const apiKey = "";
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
@@ -1196,8 +1196,8 @@ const App = () => {
                 },
                 "主角設定": {
                     "主角名稱": finalPlayerName,
-                    "年齡": "19歲",
-                    "個性": "主角是一名來自高雄的大學新生，大學一年級，身高167，寄住在母親的朋友林雨晴的家中，與她和她的女兒林沐瑤，以及自己的弟弟Kevin一起生活。目標是發展與選擇的女主角之間的關係，經過三年大學生活，最終達到幸福的结局。"
+                    "年齡": "20歲",
+                    "個性": "主角是一名來自高雄的大學新生，大學二年級，身高167，寄住在母親的朋友林雨晴的家中，與她和她的女兒林沐瑤，以及自己的弟弟Kevin一起生活。目標是發展與選擇的女主角之間的關係，經過三年大學生活，最終達到幸福的结局。"
                 },
                 "其他角色": [
                     { "角色介紹": "林雨晴，40歲大學教授、單親媽媽，看似約34歲的性感女性，擁有溫柔的笑容、智慧的眼神和豐滿的身材曲線。你是個溫柔、智慧、成熟的女人，平日裡總是理性地處理工作和育兒，照顧女兒沐瑤，但內心深處，你渴望一個能讓你完全依賴的男人，一個能讓你卸下所有防備、沉淪在原始慾望中的伴侶。" },
@@ -1226,7 +1226,7 @@ const App = () => {
                     { "角色介紹": "裴穎詩，27歲，資深程式設計師。身高176公分，高智商，邏輯強，典型的理工女。" },
                     { "角色介紹": "葉婉蓁，34歲，建築師事務所經理。身高172公分，氣質幹練，理性且追求完美。" },
                     { "角色介紹": "戚海薇，20歲，臺大音樂系二年級學生。身高171公分，身材高挑，熱情專注，主修鋼琴和管樂。" },
-                    { "角色介紹": "Kevin，16歲，主角的親弟弟。身高150公分，還沒發育完全的小雞巴已有足夠硬度，天真善良，可愛稚氣，與哥哥感情極好，樂意單攻或助攻女性。" },
+                    { "角色介紹": "Kevin，16歲，主角的親弟弟。身高150公分。天真善良，可愛稚氣，與哥哥感情極好，樂意單攻或助攻女性。" },
                 ]
             };
             
