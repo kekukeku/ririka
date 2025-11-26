@@ -62,7 +62,7 @@ const HEROINE_PROFILES = {
     mayuri: { id: "mayuri", name: "夏沫語", age: 22, gender: "female", social: "https://x.com/Mayuri2000AA", avatarFolderId: "05", profile: { identityKey: "identity_mayuri", appearance: "設計系大四學生，五官精緻，日常穿搭都非常時尚，擁有火辣的身材和一雙電眼。身材姣好，上圍豐滿。", personality: "大膽、熱情且思想開放。對自己熱愛的事物充滿自信，行動力極強。看似玩世不恭，對待感情卻有著自己獨特的原則。", background: "主角的室友，租住在同一層公寓中。她的網絡 persona 和私下的樣子似乎有些不同。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家尊重並融入她的興趣圈。與她在一起的生活充滿刺激與樂趣，但玩家也需要證明自己不是一個無趣的人。" } },
     
     // --- 精簡後的其他女性角色 (4位) ---
-    teacher2: { id: "teacher2", name: "莊心妍", age: 30, gender: "female", social: "https://x.com/TeacherChuang", avatarFolderId: "15", profile: { identityKey: "identity_teacher2", appearance: "身高168公分，氣質知性優雅。常穿著襯衫搭配及膝裙，散發著溫柔而嚴謹的教師威嚴，身材纖細，上圍豐滿。", personality: "教學嚴格但私下溫柔，對學生充滿耐心。雖然是受歡迎的美女老師，但因生活圈單純，對戀愛意外地純情。", background: "Kevin的班導師，教英語。常在放學後留在辦公室輔導學生，或在附近的書店尋找教材。" }, gameplayInfo: { difficulty: 2, strategy: "需要高學業（academics）來引起她的注意。以請教英文問題為由接近她，並展現出成熟懂事的一面。" } },
+    teacher2: { id: "teacher2", name: "莊心妍", age: 30, gender: "female", social: "https://x.com/TeacherChuang", avatarFolderId: "15", profile: { identityKey: "identity_teacher2", appearance: "身高168公分，氣質知性優雅。常穿著襯衫搭配及膝裙，散發著溫柔而嚴謹的教師威嚴，身材纖細，上圍豐滿。", personality: "教學嚴格但私下溫柔，對學生充滿耐心。雖然是受歡迎的美女老師，但因生活圈單純，對戀愛意外地純情。", background: "Kevin的班導師，教英語。常在放學後留在辦公室輔導學生，或在附近的書店尋找教材。" }, gameplayInfo: { difficulty: 2, strategy: "需要高學業（academics）來引起她的注意。以請教英文問題為由接近她，並展現出色的能力以獲得她的認可。以請教英文問題為由接近她，並展現出成熟懂事的一面。" } },
     coach: { id: "coach", name: "范冰心", age: 19, gender: "female", social: "https://x.com/CoachFan", avatarFolderId: "17", profile: { identityKey: "identity_coach", appearance: "沐瑤的好閨蜜與同班同學。身高169公分，個性開放，身材火辣。", personality: "大方、直率。是個愛笑的大姐姐，對什麼事都好奇。", background: "信義區富家千金。主角可能會在隔壁林宅或學校遇到她。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家有良好的體力（stamina）能和她一起出遊，並欣賞她對的好奇心。" } },
     dancer: { id: "dancer", name: "羅安穎", age: 21, gender: "female", social: "https://x.com/DancerLuo", avatarFolderId: "22", profile: { identityKey: "identity_dancer", appearance: "身高170公分，身材比例極佳，線條優美。練習時汗水淋漓，散發著力與美。", personality: "熱情、專注、好動。用身體表達情感，不擅長言詞，但行動力極強。", background: "住在另一個隔壁單位的鄰居，與戚海薇是室友。臺大舞蹈系三年級的學生，也是學校熱舞社的社長。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家能跟上她的節奏，欣賞她的舞蹈，並在她受傷時給予細心的照顧。" } },
     streamer: { id: "streamer", name: "顧盼兮", age: 22, gender: "female", social: "https://x.com/StreamerGu", avatarFolderId: "23", profile: { identityKey: "identity_streamer", appearance: "身高168公分，甜美可愛，鏡頭前活力四射，鏡頭後卻有些慵懶。", personality: "雙重性格，螢幕前是活潑的主播，私下是個宅女，喜歡打電動和看動漫。", background: "人氣遊戲主播，臺大四年級學生。與夏沫語（Mayuri）是好友兼競爭對手。常出沒於光華商場。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家能接受她的雙重面貌，最好能和她一起打遊戲，並在她被黑粉攻擊時保護她。" } },
@@ -176,7 +176,27 @@ const processAndResizeImage = (file) => new Promise((resolve, reject) => {
 });
 const fetchAndEncodeImage = async (url) => { try { const response = await fetch(url); if (!response.ok) throw new Error(`無法獲取圖片: ${response.statusText}`); const blob = await response.blob(); return new Promise((resolve, reject) => { const reader = new FileReader(); reader.onloadend = () => resolve(reader.result.split(',')[1]); reader.onerror = reject; reader.readAsDataURL(blob); }); } catch (error) { console.error(`讀取圖片失敗 ${url}:`, error); return null; }};
 const fetchWithRetry = async (url, options, retries = 3, backoff = 1000) => { for (let i = 0; i < retries; i++) { try { const response = await fetch(url, options); if (!response.ok) { const errorData = await response.json().catch(() => ({})); throw new Error(`API 請求失敗，狀態 ${response.status}: ${errorData.error?.message || '未知錯誤'}`); } return response.json(); } catch (error) { console.error(`第 ${i + 1} 次嘗試失敗:`, error); if (i === retries - 1) throw error; await new Promise(res => setTimeout(res, backoff * (i + 1))); } } };
-const callGeminiApi = async (prompt, systemPrompt, schema) => { const apiKey = ""; const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`; const payload = { contents: [{ parts: [{ text: JSON.stringify(prompt, null, 2) }] }], systemInstruction: { parts: [{ text: systemPrompt }] }, generationConfig: { responseMimeType: "application/json", responseSchema: schema }, }; const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); const text = result.candidates?.[0]?.content?.parts?.[0]?.text; if (!text) throw new Error("從 Gemini API 返回的格式無效。"); return JSON.parse(text); }
+const callGeminiApi = async (prompt, systemPrompt, schema) => { 
+    const apiKey = ""; 
+    // [FIX] 修正模型版本為目前穩定支援的 Gemini 2.5 Flash Preview (09-2025)
+    // 避免使用 gemini-3-pro-preview 導致的 404 錯誤
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`; 
+    const payload = { 
+        contents: [{ parts: [{ text: JSON.stringify(prompt, null, 2) }] }], 
+        systemInstruction: { parts: [{ text: systemPrompt }] }, 
+        generationConfig: { responseMimeType: "application/json", responseSchema: schema }, 
+        safetySettings: [
+            { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_NONE" }
+        ]
+    }; 
+    const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); 
+    const text = result.candidates?.[0]?.content?.parts?.[0]?.text; 
+    if (!text) throw new Error("從 Gemini API 返回的格式無效。"); 
+    return JSON.parse(text); 
+}
 const callFlashImageApi = async (prompt, images = []) => {
     const apiKey = "";
     // 使用 Imagen 4 模型 (環境支援的最新版)
@@ -214,7 +234,25 @@ const callFlashImageApi = async (prompt, images = []) => {
         throw error;
     }
 };
-const callGenerativeTextApi = async (systemPrompt, userPrompt) => { const apiKey = ""; const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`; const payload = { contents: [{ parts: [{ text: userPrompt }] }], systemInstruction: { parts: [{ text: systemPrompt }] }, }; const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); const text = result.candidates?.[0]?.content?.parts?.[0]?.text; if (!text) throw new Error("從 Gemini Text API 返回的格式無效。"); return text; };
+const callGenerativeTextApi = async (systemPrompt, userPrompt) => { 
+    const apiKey = ""; 
+    // [FIX] 根據用戶要求，切換回 Flash-Lite 版本以節省資源 (輔助功能對模型智商要求較低)
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite-preview-09-2025:generateContent?key=${apiKey}`; 
+    const payload = { 
+        contents: [{ parts: [{ text: userPrompt }] }], 
+        systemInstruction: { parts: [{ text: systemPrompt }] }, 
+        safetySettings: [
+            { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_NONE" },
+            { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_NONE" }
+        ]
+    }; 
+    const result = await fetchWithRetry(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) }); 
+    const text = result.candidates?.[0]?.content?.parts?.[0]?.text; 
+    if (!text) throw new Error("從 Gemini Text API 返回的格式無效。"); 
+    return text; 
+};
 
 // --- TTS 助手函數 ---
 const base64ToArrayBuffer = (base64) => {
