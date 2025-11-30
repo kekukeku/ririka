@@ -62,17 +62,85 @@ const HEROINE_PROFILES = {
     mayuri: { id: "mayuri", name: "夏沫語", age: 22, gender: "female", social: "https://x.com/Mayuri2000AA", avatarFolderId: "05", profile: { identityKey: "identity_mayuri", appearance: "設計系大四學生，五官精緻，日常穿搭都非常時尚，擁有火辣的身材和一雙電眼。身材姣好，上圍豐滿。", personality: "大膽、熱情且思想開放。對自己熱愛的事物充滿自信，行動力極強。看似玩世不恭，對待感情卻有著自己獨特的原則。", background: "主角的室友，租住在同一層公寓中。她的網絡 persona 和私下的樣子似乎有些不同。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家尊重並融入她的興趣圈。與她在一起的生活充滿刺激與樂趣，但玩家也需要證明自己不是一個無趣的人。" } },
     
     // --- 精簡後的其他女性角色 (4位) ---
-    teacher2: { id: "teacher2", name: "莊心妍", age: 30, gender: "female", social: "https://x.com/TeacherChuang", avatarFolderId: "15", profile: { identityKey: "identity_teacher2", appearance: "身高168公分，氣質知性優雅。常穿著襯衫搭配及膝裙，散發著溫柔而嚴謹的教師威嚴，身材纖細，上圍豐滿。", personality: "教學嚴格但私下溫柔，對學生充滿耐心。雖然是受歡迎的美女老師，但因生活圈單純，對戀愛意外地純情。", background: "Kevin的班導師，教英語。常在放學後留在辦公室輔導學生，或在附近的書店尋找教材。" }, gameplayInfo: { difficulty: 2, strategy: "需要高學業（academics）來引起她的注意。以請教英文問題為由接近她，並展現出色的能力以獲得她的認可。以請教英文問題為由接近她，並展現出成熟懂事的一面。" } },
-    coach: { id: "coach", name: "范冰心", age: 19, gender: "female", social: "https://x.com/CoachFan", avatarFolderId: "17", profile: { identityKey: "identity_coach", appearance: "沐瑤的好閨蜜與同班同學。身高169公分，個性開放，身材火辣。", personality: "大方、直率。是個愛笑的大姐姐，對什麼事都好奇。", background: "信義區富家千金。主角可能會在隔壁林宅或學校遇到她。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家有良好的體力（stamina）能和她一起出遊，並欣賞她對的好奇心。" } },
-    dancer: { id: "dancer", name: "羅安穎", age: 21, gender: "female", social: "https://x.com/DancerLuo", avatarFolderId: "22", profile: { identityKey: "identity_dancer", appearance: "身高170公分，身材比例極佳，線條優美。練習時汗水淋漓，散發著力與美。", personality: "熱情、專注、好動。用身體表達情感，不擅長言詞，但行動力極強。", background: "住在另一個隔壁單位的鄰居，與戚海薇是室友。臺大舞蹈系三年級的學生，也是學校熱舞社的社長。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家能跟上她的節奏，欣賞她的舞蹈，並在她受傷時給予細心的照顧。" } },
-    streamer: { id: "streamer", name: "顧盼兮", age: 22, gender: "female", social: "https://x.com/StreamerGu", avatarFolderId: "23", profile: { identityKey: "identity_streamer", appearance: "身高168公分，甜美可愛，鏡頭前活力四射，鏡頭後卻有些慵懶。", personality: "雙重性格，螢幕前是活潑的主播，私下是個宅女，喜歡打電動和看動漫。", background: "人氣遊戲主播，臺大四年級學生。與夏沫語（Mayuri）是好友兼競爭對手。常出沒於光華商場。" }, gameplayInfo: { difficulty: 3, strategy: "需要玩家能接受她的雙重面貌，最好能和她一起打遊戲，並在她被黑粉攻擊時保護她。" } },
+    teacher2: { 
+        id: "teacher2", 
+        name: "莊心妍", 
+        age: 30, 
+        gender: "female", 
+        social: "https://x.com/TeacherChuang", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764518251/xinyan01_uogdoa.png", "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520368/xinyan02_lcxegx.png"],
+        profile: { identityKey: "identity_teacher2", appearance: "身高168公分，氣質知性優雅。常穿著襯衫搭配及膝裙，散發著溫柔而嚴謹的教師威嚴，身材纖細，上圍豐滿。", personality: "教學嚴格但私下溫柔，對學生充滿耐心。雖然是受歡迎的美女老師，但因生活圈單純，對戀愛意外地純情。", background: "Kevin的班導師，教英語。常在放學後留在辦公室輔導學生，或在附近的書店尋找教材。" }, 
+        gameplayInfo: { difficulty: 2, strategy: "需要高學業（academics）來引起她的注意。以請教英文問題為由接近她，並展現出色的能力以獲得她的認可。以請教英文問題為由接近她，並展現出成熟懂事的一面。" } 
+    },
+    coach: { 
+        id: "coach", 
+        name: "范冰心", 
+        age: 19, 
+        gender: "female", 
+        social: "https://x.com/CoachFan", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764526580/Create_Animation_Dec_1_2025_qyavls.png"],
+        profile: { identityKey: "identity_coach", appearance: "沐瑤的好閨蜜與同班同學。身高169公分，個性開放，身材火辣。", personality: "大方、直率。是個愛笑的大姐姐，對什麼事都好奇。", background: "信義區富家千金。主角可能會在隔壁林宅或學校遇到她。" }, 
+        gameplayInfo: { difficulty: 3, strategy: "需要玩家有良好的體力（stamina）能和她一起出遊，並欣賞她對的好奇心。" } 
+    },
+    dancer: { 
+        id: "dancer", 
+        name: "羅安穎", 
+        age: 21, 
+        gender: "female", 
+        social: "https://x.com/DancerLuo", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764520364/anyin02_xibrha.png", "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520374/anyin01_jjst6m.png"],
+        profile: { identityKey: "identity_dancer", appearance: "身高170公分，身材比例極佳，線條優美。練習時汗水淋漓，散發著力與美。", personality: "熱情、專注、好動。用身體表達情感，不擅長言詞，但行動力極強。", background: "住在另一個隔壁單位的鄰居，與戚海薇是室友。臺大舞蹈系三年級的學生，也是學校熱舞社的社長。" }, 
+        gameplayInfo: { difficulty: 2, strategy: "需要玩家能跟上她的節奏，欣賞她的舞蹈，並在她受傷時給予細心的照顧。" } 
+    },
+    streamer: { 
+        id: "streamer", 
+        name: "顧盼兮", 
+        age: 23, 
+        gender: "female", 
+        social: "https://x.com/StreamerGu", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764520360/panxi_b15e3s.png"],
+        profile: { 
+            identityKey: "identity_streamer", 
+            appearance: "身高169公分，上圍豐滿，擁有一雙大大可愛的電眼。常穿著輕便的運動短裙或實驗袍。", 
+            personality: "個性開朗，喜歡跟學生打成一片，完全沒有老師的架子。", 
+            background: "Kevin就讀高中的實習生物老師。因為長相可愛且教學有趣，在學生中人氣很高。" 
+        }, 
+        gameplayInfo: { difficulty: 3, strategy: "需要透過Kevin的學校話題或活動接近。她對有趣的生物知識或學生間的流行話題很感興趣。" } 
+    },
     
     // --- 鄰居 ---
-    model: { id: "model", name: "許靜姝", age: 28, gender: "female", social: "https://x.com/ModelXu", avatarFolderId: "24", profile: { identityKey: "identity_model", appearance: "身高180公分，標準的模特身材，擁有一張高級臉，氣質高冷。", personality: "敬業、自律、安靜。習慣了鏡頭，但私下不愛說話，喜歡獨處。", background: "住在對面豪宅的鄰居。專業模特兒，常出現在信義區的時尚秀場。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家有極高的魅力（charm）才能吸引她的注意。她需要的是一個能讓她放鬆做自己的人。" } },
-    music_student: { id: "music_student", name: "戚海薇", age: 20, gender: "female", social: "https://x.com/MusicQi", avatarFolderId: "33", profile: { identityKey: "identity_music_student", appearance: "臺大音樂系二年級學生。身高171公分，身材高挑，氣質優雅，手指修長，常抱著樂譜。", personality: "感性、細膩、溫柔。對聲音非常敏感，喜歡用音樂表達情感，不擅長直白的言語交流。", background: "住在另一個隔壁單位的鄰居，與羅安穎是室友。臺大音樂系二年級的學生，擅長鋼琴與長笛。每天都會練習。" }, gameplayInfo: { difficulty: 2, strategy: "需要玩家展現對音樂的鑑賞力（Charm），成為她的聽眾。在她練習遇到瓶頸時給予鼓勵，並創造安靜的相處時光。" } },
+    model: { 
+        id: "model", 
+        name: "許靜姝", 
+        age: 28, 
+        gender: "female", 
+        social: "https://x.com/ModelXu", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764520364/jingshu01_zivums.png"],
+        profile: { identityKey: "identity_model", appearance: "身高180公分，標準的模特身材，擁有一張高級臉，氣質高冷。", personality: "敬業、自律、安靜。習慣了鏡頭，但私下不愛說話，喜歡獨處。", background: "住在對面豪宅的鄰居。專業模特兒，常出現在信義區的時尚秀場。" }, 
+        gameplayInfo: { difficulty: 2, strategy: "需要玩家有極高的魅力（charm）才能吸引她的注意。她需要的是一個能讓她放鬆做自己的人。" } 
+    },
+    music_student: { 
+        id: "music_student", 
+        name: "戚海薇", 
+        age: 20, 
+        gender: "female", 
+        social: "https://x.com/MusicQi", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764520364/haiwei02_jqj5mu.png"],
+        profile: { identityKey: "identity_music_student", appearance: "臺大音樂系二年級學生。身高171公分，身材高挑，氣質優雅，手指修長，常抱著樂譜。", personality: "感性、細膩、溫柔。對聲音非常敏感，喜歡用音樂表達情感，不擅長直白的言語交流。", background: "住在另一個隔壁單位的鄰居，與羅安穎是室友。臺大音樂系二年級的學生，擅長鋼琴與長笛。每天都會練習。" }, 
+        gameplayInfo: { difficulty: 2, strategy: "需要玩家展現對音樂的鑑賞力（Charm），成為她的聽眾。在她練習遇到瓶頸時給予鼓勵，並創造安靜的相處時光。" } 
+    },
     
     // --- 弟弟 ---
-    kevin: { id: "kevin", name: "Kevin", age: 16, gender: "male", social: "https://x.com/KevinBro", avatarFolderId: "M1", profile: { identityKey: "identity_kevin", appearance: "身高162公分，高中一年級學生，天真善良，長相可愛稚氣，非常討女生喜歡。", personality: "主角的親弟弟，總是崇拜與尊敬哥哥。樂意單獨或與哥哥一起攻略女性角色，不會嫉妒。保持少年的天真、稚氣和尊敬對方稱謂的語氣，親熱時會天真地強調自己或對方的年紀或身份，增加對方的背德刺激感。", background: "跟隨哥哥一起從高雄搬到臺北，住在同一個租屋處的不同房間。" }, gameplayInfo: { difficulty: 0, strategy: "夥伴角色，非攻略對象。會獨立攻略其他女性角色。" } }
+    kevin: { 
+        id: "kevin", 
+        name: "Kevin", 
+        age: 16, 
+        gender: "male", 
+        social: "https://x.com/KevinBro", 
+        images: ["https://res.cloudinary.com/dkv0lceid/image/upload/v1764523475/kevin02_cbaej6.png", "https://res.cloudinary.com/dkv0lceid/image/upload/v1764523477/kevin01_w02a6z.png"],
+        profile: { identityKey: "identity_kevin", appearance: "身高155公分，高中一年級學生，天真善良，長相可愛稚氣，非常討女生喜歡。", personality: "主角的親弟弟，總是崇拜與尊敬哥哥。樂意單獨或與哥哥一起攻略女性角色，不會嫉妒。保持少年的天真、稚氣和尊敬對方稱謂的語氣，親熱時會天真地強調自己或對方的年紀或身份，增加對方的背德刺激感。", background: "跟隨哥哥一起從高雄搬到臺北，住在同一個租屋處的不同房間。" }, 
+        gameplayInfo: { difficulty: 0, strategy: "夥伴角色，非攻略對象。會獨立攻略其他女性角色。" } 
+    }
 };
 const LOCATIONS = [
     { id: "rented_apartment", nameKey: "location_rented_apartment_name", descriptionKey: "location_rented_apartment_description", type: "據點" },
@@ -117,7 +185,7 @@ const translations = { 
         identity_ririka: '臺灣大學社會心理學教授', identity_mei: '臺灣大學一年級學生', identity_yuina: '臺灣大學助理教授', identity_rin: '臺灣大學研究所一年級碩士生', identity_mayuri: '臺大設計系四年級學生',
         identity_kevin: '主角的弟弟', 
         identity_teacher2: '知名高中英語老師', 
-        identity_coach: '沐瑤的好閨蜜', identity_streamer: '人氣遊戲主播', identity_model: '專業模特兒', identity_dancer: '臺大舞蹈系學生', identity_music_student: '臺大音樂系二年級學生',
+        identity_coach: '沐瑤的好閨蜜', identity_streamer: 'Kevin高中的實習生物老師', identity_model: '專業模特兒', identity_dancer: '臺大舞蹈系學生', identity_music_student: '臺大音樂系二年級學生',
         initial_description: '你終於抵達了臺北的新租屋處。你的弟弟 Kevin 也和你一起。門一開，兩位風格迥異的美女出現在眼前。一位是冷豔高挑的長髮美人，另一位則是打扮時尚火辣的女孩。「這就是我們的新室友嗎？」時尚女孩夏沫語笑著打量你們，「我是夏沫語，這位冰山美人是白凌雪。歡迎你們這對兄弟檔入住！」Kevin 躲在你身後，害羞地探出頭來。「請、請多指教...」',
         initial_action_1: '對兩位美女室友說「請多指教，我們是新來的房客」。', initial_action_2: '禮貌地稱讚白凌雪和夏沫語很漂亮。', initial_action_3: '拍拍Kevin的肩膀「別害羞，跟姐姐們打個招呼。」。',
         day_sun_short: '日', day_mon_short: '一', day_tue_short: '二', day_wed_short: '三', day_thu_short: '四', day_fri_short: '五', day_sat_short: '六', no_events_today: '本日無行程。', select_date_prompt: '請選擇日期以查看行程。',
@@ -820,14 +888,22 @@ const App = () => {
             const initialDescription = t('initial_description').replace('{playerName}', playerData.name);
 
             const avatarPromises = Object.values(HEROINE_PROFILES).map(async (heroine) => {
-                const avatarIndex = Math.floor(Math.random() * 5) + 1;
-                // [MODIFIED] Use avatarFolderId from profile
-                const folderId = heroine.avatarFolderId; 
-                if (!folderId) {
-                    console.warn(`Character ${heroine.name} is missing avatarFolderId.`);
-                    return { id: heroine.id, avatar: null }; // Skip if no folder ID
+                // [NEW LOGIC] Check if character has custom images
+                let url;
+                if (heroine.images && heroine.images.length > 0) {
+                     // Pick a random image from the custom list
+                     url = heroine.images[Math.floor(Math.random() * heroine.images.length)];
+                } else {
+                    // Fallback to original logic
+                    const avatarIndex = Math.floor(Math.random() * 5) + 1;
+                    const folderId = heroine.avatarFolderId; 
+                    if (!folderId) {
+                        console.warn(`Character ${heroine.name} is missing avatarFolderId.`);
+                        return { id: heroine.id, avatar: null }; 
+                    }
+                    url = `https://callmygod.com/galgame/01/cha/${folderId}/0${avatarIndex}.jpg`;
                 }
-                const url = `https://callmygod.com/galgame/01/cha/${folderId}/0${avatarIndex}.jpg`;
+
                 const base64 = await fetchAndEncodeImage(url);
                 return { id: heroine.id, avatar: base64 };
             });
