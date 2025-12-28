@@ -109,7 +109,7 @@ const HEROINE_PROFILES = {
       identityKey: "identity_rin",
       appearance: "冷豔高挑，身高175公分，上圍豐滿。",
       personality: "冷靜沉著，氣質孤高但真心的人值得她敞開心扉。",
-      background: "就讀臺灣大學碩士班一年級，林雨晴的指導學生。"
+      background: "新搬來的鄰居，與林家因緣巧合相識。"
     },
     gameplayInfo: { difficulty: 3, strategy: "耐心與尊重，逐步建立信任。" },
     voiceName: "Callirrhoe"
@@ -122,8 +122,8 @@ const HEROINE_PROFILES = {
     profile: {
       identityKey: "identity_mayuri",
       appearance: "時尚火辣，身高169公分，上圍豐滿。",
-      personality: "外向大方，善於社交，對新事物充滿好奇。",
-      background: "就讀臺灣大學四年級，糕點社社長，白凌雪的室友，熱愛穿搭與社交媒體。"
+      personality: "外向大方，善於社交，對新生活充滿好奇。",
+      background: "林宅隔壁的鄰居，熱愛穿搭與社交媒體。"
     },
     gameplayInfo: { difficulty: 2, strategy: "活潑互動，創造共同回憶。" },
     voiceName: "Aoede"
@@ -158,14 +158,14 @@ const HEROINE_PROFILES = {
   },
   cafe_staff: {
     id: "cafe_staff",
-    name: "趙語彤",
-    age: 18,
+    name: "葉語彤",
+    age: 20,
     gender: "female",
     profile: {
       identityKey: "identity_cafe_staff",
-      appearance: "星巴克工讀生，身高166公分，活潑甜美，上圍豐滿。",
-      personality: "元氣開朗，喜歡與客人互動，很喜歡和Kevin相處。",
-      background: "趙夢潔的女兒，讀高三，Kevin的同校學姐。"
+      appearance: "星巴克店員，身高166公分，活潑甜美，上圍豐滿。",
+      personality: "元氣開朗，喜歡與客人互動，對主角和Kevin有好感。",
+      background: "星巴克員工，常與玩家相遇。"
     },
     gameplayInfo: { difficulty: 3, strategy: "輕鬆互動、製造親密機會。" },
     voiceName: "Leda"
@@ -173,20 +173,20 @@ const HEROINE_PROFILES = {
   school_intern_teacher: {
     id: "school_intern_teacher",
     name: "顧盼兮",
-    age: 24,
+    age: 23,
     gender: "female",
     profile: {
       identityKey: "identity_school_intern_teacher",
       appearance: "高中實習老師，身高170公分，知性又有魅力，上圍豐滿。",
       personality: "溫柔親切，常和學生打成一片。",
-      background: "在Kevin高中新任實習老師。"
+      background: "在Kevin高中新任實習老師，與主角在社團活動中相識。"
     },
     gameplayInfo: { difficulty: 3, strategy: "尊重專業與界線，逐步拉近距離。" },
     voiceName: "Laomedeia"
   },
   homeroom_teacher: {
     id: "homeroom_teacher",
-    name: "關曼青",
+    name: "陳曼青",
     age: 30,
     gender: "female",
     profile: {
@@ -205,9 +205,9 @@ const HEROINE_PROFILES = {
     gender: "female",
     profile: {
       identityKey: "identity_club_teacher",
-      appearance: "糕點社團指導老師，身高169公分，優雅風格，上圍豐滿。",
-      personality: "溫柔有氣質，重視團隊精神。",
-      background: "臺大糕點社團指導老師，與主角有多次活動互動。"
+      appearance: "社團指導老師，身高169公分，運動風格，上圍豐滿。",
+      personality: "熱情有活力，重視團隊精神。",
+      background: "校內社團指導老師，與主角有多次活動互動。"
     },
     gameplayInfo: { difficulty: 2, strategy: "參與活動，展現幫助與合作。" },
     voiceName: "Aoede"
@@ -215,13 +215,13 @@ const HEROINE_PROFILES = {
   parent_mom: {
     id: "parent_mom",
     name: "趙夢潔",
-    age: 39,
+    age: 35,
     gender: "female",
     profile: {
       identityKey: "identity_parent_mom",
       appearance: "高中學生家長，身高165公分，風情成熟，上圍豐滿。",
       personality: "熱情外向，重視家庭與教養。",
-      background: "趙語彤的母親，林雨晴的好閨蜜。"
+      background: "Kevin同學的家長，與主角家庭有交集。"
     },
     gameplayInfo: { difficulty: 3, strategy: "應對家庭倫理與關係網絡。" },
     voiceName: "Kore"
@@ -229,36 +229,34 @@ const HEROINE_PROFILES = {
   yoga_teacher: {
     id: "yoga_teacher",
     name: "孫藝彤",
-    age: 29,
+    age: 28,
     gender: "female",
     profile: {
       identityKey: "identity_yoga_teacher",
       appearance: "瑜珈老師，身高174公分，身材健美，上圍豐滿。",
       personality: "陽光正向，注重身心靈平衡。",
-      background: "大學社團和瑜伽教室的老師。"
+      background: "大學社團或健身房的瑜珈老師。"
     },
     gameplayInfo: { difficulty: 2, strategy: "健康互動與共同運動活動。" },
     voiceName: "Erinome"
   }
 };
 
-// 圖片映射（使用您提供的 Cloudinary 現成連結）
+// 圖片映射（更新為 origin ririka 的路徑格式）
 const CHARACTER_IMAGE_URLS = {
-    // 根據檔名指派
-    mei: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764516675/mei04_vuocz4.jpg", // mei04 -> 林沐瑤
-    school_intern_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520360/panxi_b15e3s.png", // panxi -> 顧盼兮
-    club_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520364/haiwei02_jqj5mu.png", // haiwei -> 戚海薇
-    
-    // 分配其他連結給主要角色
-    ririka: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520368/jingshu02_j7tyhq.png", // jingshu -> 林雨晴 (成熟氣質)
-    yuina: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764518251/xinyan01_uogdoa.png", // xinyan01 -> 蘇巧希
-    mayuri: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520368/xinyan02_lcxegx.png", // xinyan02 -> 夏沫語
-    rin: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520374/anyin01_jjst6m.png", // anyin -> 白凌雪 (冷豔)
-    kevin: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764523475/kevin02_cbaej6.png", // Animation -> Kevin (中性/年輕)
+    // 參照 origin ririka 的資料夾路徑 (01-05)，固定選用 01.jpg 作為代表
+    ririka: "https://callmygod.com/galgame/01/cha/01/01.jpg", 
+    mei: "https://callmygod.com/galgame/01/cha/02/01.jpg",
+    yuina: "https://callmygod.com/galgame/01/cha/03/01.jpg",
+    rin: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520368/jingshu02_j7tyhq.png",
+    mayuri: "https://callmygod.com/galgame/01/cha/05/01.jpg",
 
-    // 新增/修正的 Cloudinary 連結
-    cafe_staff: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764526580/Create_Animation_Dec_1_2025_qyavls.png", // 趙語彤
-    homeroom_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1765107784/Gemini_Generated_Image_copy_4_piranv.png", // 關曼青
+    // 其他角色 (保持原有的 Cloudinary 連結)
+    kevin: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764523475/kevin02_cbaej6.png", // Animation -> Kevin (中性/年輕)
+    school_intern_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764520360/panxi_b15e3s.png", // panxi -> 顧盼兮
+    club_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1766782849/IMG_3250_olu7nk.jpg", // haiwei -> 戚海薇
+    cafe_staff: "https://res.cloudinary.com/dkv0lceid/image/upload/v1764526580/Create_Animation_Dec_1_2025_qyavls.png", // 葉語彤
+    homeroom_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1765107784/Gemini_Generated_Image_copy_4_piranv.png", // 陳曼青
     parent_mom: "https://res.cloudinary.com/dkv0lceid/image/upload/v1765107784/Gemini_Generated_Image_copy_3_fgjfoy.png", // 趙夢潔
     yoga_teacher: "https://res.cloudinary.com/dkv0lceid/image/upload/v1765107783/%E5%AD%AB%E8%97%9D%E5%BD%A4_o7mu6f.png", // 孫藝彤
     cafe_manager: "https://res.cloudinary.com/dkv0lceid/image/upload/v1765107784/%E8%98%87%E5%A9%89_flwxhj.png", // 蘇婉柔
@@ -442,7 +440,7 @@ const translations = {
         identity_mayuri: '時尚室友',
         identity_kevin: '主角弟弟',
         identity_cafe_manager: '星巴克店長',
-        identity_cafe_staff: '星巴克工讀生',
+        identity_cafe_staff: '星巴克店員',
         identity_school_intern_teacher: '高中實習老師',
         identity_homeroom_teacher: '高中班導師',
         identity_club_teacher: '社團指導老師',
@@ -482,9 +480,8 @@ const processAndResizeImage = (file) => new Promise((resolve, reject) => {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
 
-            // --- [修改] 圖片解析度優化：1360 -> 1024 ---
-            const targetWidth = 1024;
-            const targetHeight = 576;
+            const targetWidth = 1360;
+            const targetHeight = 765;
             const targetAspectRatio = targetWidth / targetHeight; // 16:9
 
             canvas.width = targetWidth;
@@ -507,8 +504,7 @@ const processAndResizeImage = (file) => new Promise((resolve, reject) => {
             }
 
             ctx.drawImage(img, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, targetWidth, targetHeight);
-            // --- [修改] 圖片壓縮率優化：0.9 -> 0.4 ---
-            resolve(canvas.toDataURL('image/jpeg', 0.4).split(',')[1]);
+            resolve(canvas.toDataURL('image/jpeg', 0.9).split(',')[1]);
         };
         img.onerror = reject;
         img.src = event.target.result;
@@ -747,7 +743,7 @@ export const STYLE_GUIDELINES = `
 - 無論是日常場景或成人場景，都要讓讀者能「看到畫面」，像是在看一部低成本但鏡頭很懂人性的電影。
 
 【呻吟/叫聲/淫叫的參考風格：】
-- 「天哪……我從沒被這麼小的男生幹…怎麼會…這麼爽…」
+- 「天哪……我從沒被這麼小的男生幹…怎麼這麼舒服…」
 - 「啊…你太棒了..想什麼時候來幹姐姐都可以..好弟弟…快幹我…啊…好爽…姐都要被你幹死了……」
 - 「啊…老師…愛死…啊…你的小雞巴…啊…好棒..超級小雞巴…啊…爽…每天都要來幹老師…一輩子…啊啊……」
 - 「你..好壞..幹上比你高的姐姐..爽不爽..姐姐也好喜歡被你征服..快用力..幹死姐姐..」
@@ -1104,58 +1100,65 @@ const App = () => {
     }, [currentMusicUrl, soundOn, volume]);
 
     const generateSceneImage = useCallback(async (sceneDescription, currentSaveState, sceneMood, chatCharacters = []) => {
-        const { player, characters, settings, characterAvatars } = currentSaveState;
+        const { player, characters, settings } = currentSaveState;
         const { artStyle } = settings;
 
         const imagesToInclude = [];
         let promptParts = [];
+        let heightInstructions = [];
 
-        // Base image prompt
-        let imagePrompt = `Scene details: ${sceneDescription}. `;
-
-        // Add player info
+        // 1. 處理主角圖片與描述
+        // 確保主角是第一張參考圖 (如果存在)
+        let playerDesc = "The protagonist is a 20-year-old male university student, height 165cm.";
         if (player.faceImage) {
             imagesToInclude.push(player.faceImage);
-            promptParts.push(`The protagonist is a male university student whose face is provided in the first input image.`);
-        } else {
-            promptParts.push(`The protagonist is a ${player.age}-year-old male university student.`);
+            playerDesc += ` His face corresponds to the 1st input image.`;
         }
+        promptParts.push(playerDesc);
 
-        // Add character info
+        // 2. 處理其他角色圖片與身高邏輯
         const presentCharacters = characters.filter(char => chatCharacters.includes(char.id));
+        let heightInstruction = "";
         
-        // --- [修改開始] 非同步處理圖片載入 ---
         if (presentCharacters.length > 0) {
-            const charDescPromises = presentCharacters.map(async (char) => {
-                let desc = char.name;
-                if (char.id === 'ririka') {
-                    desc += ` (a beautiful, intelligent Taiwanese woman who must be visually depicted in her late 30s but looking like 30)`;
-                } else if (char.id === 'kevin') {
-                    desc += ` (a 16-year-old high school boy, cute and youthful)`;
-                } else {
-                    desc += ` (a ${char.age}-year-old adult woman)`;
+            const charDescList = [];
+            
+            for (let i = 0; i < presentCharacters.length; i++) {
+                const char = presentCharacters[i];
+                let desc = `${char.name} (${char.age}-year-old adult female, ${char.profile.appearance})`;
+                
+                // 解析身高
+                const heightMatch = char.profile.appearance.match(/身高(\d+)公分/);
+                const charHeight = heightMatch ? parseInt(heightMatch[1]) : 165;
+                const playerHeight = 165; // 主角設定身高
+
+                // 根據身高差生成指令
+                if (charHeight > playerHeight) {
+                     heightInstruction += ` CRITICAL: ${char.name} is ${charHeight}cm, TALLER than the protagonist (165cm). Depict her looking down at him or him looking up.`;
+                } else if (charHeight < playerHeight) {
+                     heightInstruction += ` CRITICAL: ${char.name} is ${charHeight}cm, SHORTER than the protagonist (165cm).`;
                 }
 
-                // 優先檢查存檔內是否有圖
-                if (characterAvatars && characterAvatars[char.id]) {
-                    imagesToInclude.push(characterAvatars[char.id]);
-                    desc += `, whose face is provided as an input image`;
-                } 
-                // 如果存檔沒圖，檢查是否有固定網址 (瘦身後的邏輯)
-                else if (CHARACTER_IMAGE_URLS[char.id]) {
-                    const base64 = await fetchAndEncodeImage(CHARACTER_IMAGE_URLS[char.id]);
-                    if (base64) {
-                        imagesToInclude.push(base64);
-                        desc += `, whose face is provided as an input image`;
+                // New Logic: Fetch on demand (從 CHARACTER_IMAGE_URLS 即時抓取)
+                const url = CHARACTER_IMAGE_URLS[char.id];
+                if (url) {
+                    try {
+                        // 即時抓取圖片資料
+                        const base64 = await fetchAndEncodeImage(url);
+                        if (base64) {
+                            imagesToInclude.push(base64);
+                            // 計算該角色對應的圖片索引 (主角若有圖則是 #2, 否則 #1)
+                            const imgOrder = imagesToInclude.length; 
+                            desc += `, whose face is provided as input image #${imgOrder}`;
+                        }
+                    } catch (e) {
+                        console.error(`Failed to fetch image for ${char.name}`, e);
                     }
                 }
-                return desc;
-            });
-
-            const characterDescriptions = (await Promise.all(charDescPromises)).join(', ');
-            promptParts.push(`The scene also features: ${characterDescriptions}.`);
+                charDescList.push(desc);
+            }
+            promptParts.push(`The scene also features: ${charDescList.join(', ')}.`);
         }
-        // --- [修改結束] ---
         
         promptParts.push(`All female characters must be depicted as adults.`);
 
@@ -1165,9 +1168,16 @@ const App = () => {
         // Final prompt construction
         let fullPrompt;
         if (sceneMood === 'intimate') {
-            fullPrompt = `A romantic scene of the male character embracing the female character from behind, strictly according to the height difference of the characters, lovingly in their previous clothing inside a cozy room, focusing on the emotional connection and gentle atmosphere. 嚴格依照男女角色設定的身高比例繪製，如果女角比較高，男角就要畫得比較矮。 ${promptParts.join(' ')} Use the provided images as face references. Style: ${stylePrompt}.`;
+            fullPrompt = `A romantic scene of the male character embracing the female character from behind lovingly in light clothing inside a cozy room.
+            ${heightInstruction}
+            ${promptParts.join(' ')}
+            Focus on the emotional connection and gentle atmosphere. 
+            Ensure strict adherence to the height differences described. 
+            Use the provided images as face references in the order specified.
+            Scene Action: ${sceneDescription}.
+            Style: ${stylePrompt}.`;
         } else {
-            fullPrompt = `Task: Create a scene set in Taipei/Taiwan. ${imagePrompt} ${promptParts.join(' ')} Use the provided images as face references. Style: ${stylePrompt}.`;
+            fullPrompt = `Task: Create a scene set in Taipei/Taiwan. Scene details: ${sceneDescription}. ${promptParts.join(' ')} Use the provided images as face references. Style: ${stylePrompt}.`;
         }
         
         return await callFlashImageApi(fullPrompt, imagesToInclude);
@@ -1181,10 +1191,8 @@ const App = () => {
             const initialGameDate = { year: gameStartDate.getFullYear(), month: gameStartDate.getMonth() + 1, day: gameStartDate.getDate(), time: 'afternoon' };
             const initialDescription = t('initial_description').replace('{playerName}', playerData.name);
 
-            // --- [修改開始] 移除所有 fetchAndEncodeImage 邏輯，直接設為空物件 ---
-            // 我們不再預先下載所有 NPC 圖片，改用即時讀取網址
-            const characterAvatars = {}; 
-            // --- [修改結束] ---
+            // 移除預先抓取所有角色圖片的邏輯，以節省存檔空間
+            // 只保留角色設定，圖片將在生成時動態抓取
 
             const initialPlayer = {
                 id: "player", name: playerData.name, age: 20, gender: "male",
@@ -1211,7 +1219,7 @@ const App = () => {
 
             const initialGameState = {
                 id: crypto.randomUUID(), player: initialPlayer, characters: initialCharacters, inventory: [], schedule: [],
-                characterAvatars,
+                // 移除 characterAvatars
                 messageLog: [{ date: initialGameDate, text: initialDescription }],
                 currentLocation: "lin_house", // Updated to new location ID
                 currentScene: { description: initialDescription, imageUrl: null, chatCharacters: ['ririka', 'mei'] },
@@ -2120,38 +2128,13 @@ const SettingsModal = ({ t, onClose, settings, setSettings, volume, setVolume, g
     const [importStatus, setImportStatus] = useState({ message: '', error: false }); 
     const memoryValue = Math.max(2, Math.min(40, settings.memorySize ?? 20)); // 更新滑桿範圍 (2-40)
     const transparencyValue = Math.min(0.8, Math.max(0, settings.descriptionTransparency ?? 0.5));
-    
-    // --- [修改開始] 瘦身邏輯：匯出前移除 NPC 圖片 ---
     const handleExport = async () => { 
         try {
             const allMetadata = await db.getAllMetadataBySaveId(gameState.id);
-            
-            // 深拷貝，避免修改到當前遊戲狀態
-            const slimGameState = JSON.parse(JSON.stringify(gameState)); 
-            
-            // 1. 移除場景圖 (最佔空間)
-            if (slimGameState.currentScene) {
-                slimGameState.currentScene.imageUrl = null;
-            }
-
-            // 2. 處理頭像 (確保不儲存靜態 NPC 圖片)
-            if (slimGameState.characterAvatars) {
-                const newAvatars = {};
-                // 只保留不在我們固定列表中的圖片 (通常是玩家自己上傳的圖片)
-                Object.keys(slimGameState.characterAvatars).forEach(key => {
-                    // 如果這個 key 不在靜態網址列表中，才保留 (代表是玩家上傳的)
-                    if (!CHARACTER_IMAGE_URLS[key]) {
-                        newAvatars[key] = slimGameState.characterAvatars[key];
-                    }
-                });
-                slimGameState.characterAvatars = newAvatars;
-            }
-
             const exportData = {
-                saveState: { ...slimGameState, settings: settings }, // 使用瘦身後的 state
+                saveState: { ...gameState, settings: settings },
                 metadata: allMetadata
             };
-
             const stateString = JSON.stringify(exportData, null, 2); 
             const blob = new Blob([stateString], { type: 'application/json' }); 
             const url = URL.createObjectURL(blob); 
@@ -2165,8 +2148,6 @@ const SettingsModal = ({ t, onClose, settings, setSettings, volume, setVolume, g
             alert("匯出失敗！");
         }
     }; 
-    // --- [修改結束] ---
-
     const handleImportClick = () => importInputRef.current.click(); 
     const handleFileImport = (event) => { 
         const file = event.target.files[0]; 
@@ -2378,18 +2359,20 @@ const EndingModal = ({ t, onReturn, ending, onClose, messageLog, onExport, playe
         </motion.div>
     );
 };
-const AvatarModal = ({ onClose, avatarSrc }) => (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={onClose}>
-        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="relative" onClick={e => e.stopPropagation()}>
-            <img 
-                src={avatarSrc.startsWith('http') ? avatarSrc : (avatarSrc.startsWith('data:') ? avatarSrc : `data:image/jpeg;base64,${avatarSrc}`)} 
-                alt="Enlarged Avatar" 
-                className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl" 
-            />
-            <button onClick={onClose} className="absolute -top-3 -right-3 bg-white rounded-full p-1 text-black"><IconClose /></button>
+const AvatarModal = ({ onClose, avatarSrc }) => {
+    // Determine if avatarSrc is a URL or Base64 (simple check)
+    const isUrl = typeof avatarSrc === 'string' && (avatarSrc.startsWith('http') || avatarSrc.startsWith('https'));
+    const src = isUrl ? avatarSrc : `data:image/jpeg;base64,${avatarSrc}`;
+
+    return (
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={onClose}>
+            <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.8, opacity: 0 }} className="relative" onClick={e => e.stopPropagation()}>
+                <img src={src} alt="Enlarged Avatar" className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl" />
+                <button onClick={onClose} className="absolute -top-3 -right-3 bg-white rounded-full p-1 text-black"><IconClose /></button>
+            </motion.div>
         </motion.div>
-    </motion.div>
-);
+    );
+};
 
 const VersionCheckModal = ({ t, onClose, onUpdate, newVersion, currentVersion }) => (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
@@ -2420,19 +2403,10 @@ const ContactsModal = ({ t, onClose, contacts, characterAvatars, handleAction, s
                 {contacts
                     .filter(contact => contact.relationship.stage !== 'stranger')
                     .map((contact) => (<li key={contact.id} className="bg-slate-800 p-3 rounded-lg flex flex-col sm:flex-row gap-4">
-                    {/* --- [修改開始] 點擊頭像與顯示邏輯，支援 URL --- */}
-                    <div onClick={() => setEnlargedAvatar(characterAvatars[contact.id] ? `data:image/jpeg;base64,${characterAvatars[contact.id]}` : CHARACTER_IMAGE_URLS[contact.id])} className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-pink-400/50 cursor-pointer transition-transform hover:scale-110 mx-auto sm:mx-0">
-                        {characterAvatars[contact.id] || CHARACTER_IMAGE_URLS[contact.id] ? (
-                            <img 
-                                src={characterAvatars[contact.id] ? `data:image/jpeg;base64,${characterAvatars[contact.id]}` : CHARACTER_IMAGE_URLS[contact.id]} 
-                                alt={contact.name} 
-                                className="w-full h-full object-cover" 
-                            />
-                        ) : (
-                            <div className="w-full h-full bg-slate-700"></div>
-                        )}
+                    {/* 更新：使用 CHARACTER_IMAGE_URLS 直接顯示網址圖片 */}
+                    <div onClick={() => setEnlargedAvatar(CHARACTER_IMAGE_URLS[contact.id])} className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-pink-400/50 cursor-pointer transition-transform hover:scale-110 mx-auto sm:mx-0">
+                        {CHARACTER_IMAGE_URLS[contact.id] ? <img src={CHARACTER_IMAGE_URLS[contact.id]} alt={contact.name} className="w-full h-full object-cover" /> : <div className="w-full h-full bg-slate-700"></div>}
                     </div>
-                    {/* --- [修改結束] --- */}
                     <div className="flex-grow">
                         <div className="flex justify-between items-start">
                             <div>
